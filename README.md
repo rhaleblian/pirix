@@ -1,6 +1,8 @@
 # pirix
 Emulation of SGI's IRIX desktop environment on Raspberry Pi.
 
+[http://github.com/rhaleblian/pirix/blob/master/screenshot0.png]
+
 ## Installation
 
     sudo apt install mwm libmotif-dev motif-clients
