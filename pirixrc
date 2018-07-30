@@ -1,0 +1,11 @@
+
+function pirix
+{
+    xrdb -load $HOME/.Xresources
+    xloadimage -onroot -fullscreen Pictures/pirix-desktop.jpg
+    xclock &
+    xosview &
+    urxvt -geometry 80x40 -iconic &
+    mwm
+}
+
