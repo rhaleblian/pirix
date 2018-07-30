@@ -7,13 +7,13 @@ PIRIX is an emulation of SGI's IRIX desktop environment on Raspberry Pi 3.
 
     sudo apt install mwm libmotif-dev motif-clients freeglut3-dev
    
-Examine the 'install' Make rule and confirm it won't whack any file you want to keep:
+Examine the 'pirix' Make rule and confirm it won't whack any file you want to keep:
 
     cat Makefile
 
-If it's safe, invoke the install rule.
+If it's safe, invoke the rule via 'make pirix'.
 
-To start PIRIX, put this in your $(HOME)/.xinitrc :
+To start PIRIX via startx, put this in your $(HOME)/.xinitrc :
 
     . /home/pi/.pirixrc
     pirix
@@ -21,7 +21,6 @@ To start PIRIX, put this in your $(HOME)/.xinitrc :
 and run
 
     startx
-
 
 ## Goodies
 If you want the atlantis demo,
@@ -48,4 +47,5 @@ A lot of things aren't here, including
 ## Credits
 IRIX - Silicon Graphics Computer Systems
 Motif - The Open Group
+Demos - opengl.org
 
