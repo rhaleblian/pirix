@@ -1,0 +1,6 @@
+/build
+/demo/atlantis/atlantis
+/demo/glutmech/glutmech
+/demo/ideas/ideas
+*.o
+
