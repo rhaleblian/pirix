@@ -5,8 +5,6 @@ PIRIX is an emulation of SGI's IRIX desktop environment on Raspberry Pi 3.
 
 ## Installation
 
-    sudo apt install mwm libmotif-dev motif-clients freeglut3-dev
-   
 Examine the 'pirix' Make rule and confirm it won't whack any file you want to keep:
 
     cat Makefile

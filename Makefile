@@ -5,13 +5,13 @@ instructions:
 	@echo Then see README.md for the remaining steps.
 
 
-prerequisites:
-	sudo apt install mwm libmotif-dev motif-clients freeglut3-dev git
+deb:
+	sudo apt install mwm libmotif-dev motif-clients freeglut3-dev git rxvt-unicode xosview xfonts-100dpi xfonts-75dpi x11-apps surf
 
 
 # Desktop configuration
 
-pirix:
+pirix: deb
 	install --mode=644 Xresources $(HOME)/.Xresources
 	install --mode=644 pirixrc $(HOME)/.pirixrc
 	install --mode=644 mwmrc $(HOME)/.mwmrc
@@ -44,4 +44,4 @@ demos: demo/atlantis/atlantis demo/ideas/ideas demo/glutmech/glutmech
 
 
 
-.PHONY: instructions pirix nedit prerequisites
+.PHONY: instructions pirix nedit deb
