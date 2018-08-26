@@ -6,7 +6,9 @@ instructions:
 
 
 deb:
-	sudo apt install mwm libmotif-dev motif-clients freeglut3-dev git rxvt-unicode xosview xfonts-100dpi xfonts-75dpi x11-apps surf
+	sudo apt install mwm libmotif-dev motif-clients \
+	xosview xfonts-100dpi xfonts-75dpi x11-apps \
+	freeglut3-dev rxvt-unicode surf
 
 
 # Desktop configuration
@@ -16,6 +18,8 @@ pirix: deb
 	install --mode=644 pirixrc $(HOME)/.pirixrc
 	install --mode=644 mwmrc $(HOME)/.mwmrc
 	install --mode=644 pirix-desktop.jpg $(HOME)/Pictures
+	install -d $(HOME)/Pictures/pirix/icons
+	install --mode=644 icons/* $(HOME)/Pictures/pirix/icons
 
 
 # NEdit
@@ -30,7 +34,6 @@ build/nedit/source/nedit: build/nedit
 nedit: build/nedit/source/nedit
 
 
-
 # OpenGL Demos
 
 demo/atlantis/atlantis:
@@ -39,9 +42,7 @@ demo/ideas/ideas:
 	cd demo/ideas && make
 demo/glutmech/glutmech:
 	cd demo/glutmech && make
-
 demos: demo/atlantis/atlantis demo/ideas/ideas demo/glutmech/glutmech
 
 
-
-.PHONY: instructions pirix nedit deb
+.PHONY: instructions pirix nedit deb demos
