@@ -67,7 +67,7 @@ Menu Applications
 
 Menu Internet
 { 
-  "Search"       f.exec "surf http://startpage.com &"
+  "Search"       f.exec "firefox-esr about:home &"
 }
 
 Menu Shell
