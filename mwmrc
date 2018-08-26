@@ -50,64 +50,29 @@ Menu RootMenu
   "Shuffle Down" _D  f.circle_down
   "Tidy Icons"   _T  f.pack_icons
   "Get Info..."  _I  f.exec "xterm -e 'xwininfo;sleep 10' &"
-  "Reload"           f.exec "xrdb ~/.Xresources &"
   "Minimize All" _M  f.minimize_all
   "Restore All"  _A  f.restore_all
   "Refresh All"  _f  f.refresh
 
   no-label           f.separator
+  "Reload Resources" f.exec "xrdb ~/.Xresources &"
   "Restart..."   _R  f.restart
   "Exit..."      _x  f.quit_mwm
 }
 
-Menu Gamestream
-{
-  "Wake"       f.exec "soylentgreen wake &"
-  "Desktop"    f.exec "moonlight stream -app 'Terminal Services Client' &"
-  "Steam"      f.exec "moonlight stream &"
-}
-
 Menu Applications
 { 
-
   "Emacs"        f.exec "emacs &"
-  "FontForge"    f.exec "fontforge &"
-  "GIMP"         f.exec "gimp &"
-  "Mathematica"  f.exec "mathematica &"
-  "MySQL Workbench"  f.exec "mysql-workbench &"
-  "Node-RED"     f.exec "urxvt -geometry 80x10 -bg '#ff3333' -e node-red &"
-  "VideoLAN"	 f.exec "vlc &"
 }
 
 Menu Internet
 { 
   "Search"       f.exec "surf http://startpage.com &"
-
-  no-label       f.separator
-  "Amazon"       f.exec "surf http://smile.amazon.com &"
-  "blackberry"   f.exec "surf http://localhost &"
-  "comiXology"   f.exec "surf http://comixology.com &"
-  "Dropbox"      f.exec "surf http://dropbox.com &"
-  "Wikipedia"    f.exec "surf http://wikipedia.org &"
-
-  no-label       f.separator
-  "Firefox"      f.exec "firefox-esr &"
-  "Chromium"     f.exec "chromium &"
-  "Google Drive" f.exec "firefox-esr http://drive.google.com &"
-
-  no-label       f.separator
-  "Conkeror"	 f.exec "conkeror &"
 }
 
 Menu Shell
 {
-  "blackberry"  f.exec "urxvt &"
-
-  no-label      f.separator
-  "bela"        f.exec "urxvt -bg '#222222' -e ssh root@bela &"
-  "crunchberry" f.exec "urxvt -bg '#332222' -e ssh -Y pi@crunchberry &"
-  "jocasta"     f.exec "urxvt -bg '#222222' -e ssh pi@ray-haleblian--jocasta &"
-  "steamlink"   f.exec "urxvt -bg '#222233' -e ssh root@steamlink-c795 &"
+  "localhost"  f.exec "urxvt &"
 }
 
 Menu System
@@ -115,8 +80,8 @@ Menu System
   "Clock"      		f.exec "xclock &"
   "Console"    		f.exec "sudo xconsole &"
   "File Manager"	f.exec "pcmanfm &"
-  "Manual"		f.exec "xman &"
-  "Monitor"		f.exec "xosview &"
+  "Manual"		    f.exec "xman &"
+  "Monitor"		    f.exec "xosview &"
 }
 
 Menu Selected dynamic
@@ -124,7 +89,6 @@ Menu Selected dynamic
   "Toolchest"    f.title
   "Shell"        f.menu Shell
   "Applications" f.menu Applications
-  "Gamestream"   f.menu Gamestream
   "Internet"     f.menu Internet
   "System"       f.menu System
 }
