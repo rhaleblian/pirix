@@ -2,5 +2,9 @@
 /demo/atlantis/atlantis
 /demo/glutmech/glutmech
 /demo/ideas/ideas
+/demo/gears/gears
+/demo/mui
+/demo/texfont
+/glut-3.6
 *.o
-
+*.zip
