@@ -130,8 +130,8 @@ XClock*geometry: -16+16
 
 ! nedit
 !
-Nedit.background: #cc9999
-Nedit*menuBar.background: #aaaaaa
+NEdit*background: #cc9999
+NEdit*menuBar*background: #aaaaaa
 
 
 ! winterm
