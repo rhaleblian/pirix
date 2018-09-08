@@ -55,7 +55,7 @@ Menu RootMenu
   "Refresh All"  _f  f.refresh
 
   no-label           f.separator
-  "Reload Resources" f.exec "xrdb ~/.Xresources &"
+  "Reload"           f.exec "xrdb ~/.Xresources &"
   "Restart..."   _R  f.restart
   "Exit..."      _x  f.quit_mwm
 }
@@ -67,7 +67,9 @@ Menu Applications
 
 Menu Internet
 { 
-  "Search"       f.exec "firefox-esr about:home &"
+  "Firefox"       f.exec "firefox-esr &"
+  "Conkeror"      f.exec "conkeror &"
+  "Surf"          f.exec "surf &"
 }
 
 Menu Shell
@@ -79,9 +81,9 @@ Menu System
 {
   "Clock"      		f.exec "xclock &"
   "Console"    		f.exec "sudo xconsole &"
-  "File Manager"	f.exec "pcmanfm &"
-  "Manual"		    f.exec "xman &"
-  "Monitor"		    f.exec "xosview &"
+  "Files"		f.exec "pcmanfm &"
+  "Manual"		f.exec "xman &"
+  "Monitor"		f.exec "xosview &"
 }
 
 Menu Selected dynamic

@@ -1,5 +1,3 @@
-!!! <sgi-theme>
-
 ! Colors
 !
 ! #aaaaaa - sgilightgray
@@ -32,7 +30,7 @@ Mwm*useIconBox: false
 
 !Mwm*client*backgroundPixmap: /usr/X11/bitmaps/stipple
 Mwm*client*title*activeBackground: #c5c1aa
-Mwm*client*iconImage: /home/pi/Pictures/icons/pirix/template.xpm
+Mwm*client*iconImage: /home/pi/Pictures/pirix/icons/template.xpm
 
 !Mwm*icon*foreground: #ff0000
 !Mwm*icon*foreground: #cc4ddd
