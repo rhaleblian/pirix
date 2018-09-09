@@ -63,6 +63,7 @@ Menu RootMenu
 Menu Applications
 { 
   "Emacs"        f.exec "emacs &"
+  "NEdit"        f.exec "nedit &"
 }
 
 Menu Demos
