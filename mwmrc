@@ -65,6 +65,13 @@ Menu Applications
   "Emacs"        f.exec "emacs &"
 }
 
+Menu Demos
+{ 
+  "Atlantis"		f.exec "atlantis &"
+  "Ideas in Motion"	f.exec "ideas &"
+  "Gears"		f.exec "gears &"
+}
+
 Menu Internet
 { 
   "Firefox"       f.exec "firefox-esr &"
@@ -90,7 +97,8 @@ Menu Selected dynamic
 {
   "Toolchest"    f.title
   "Shell"        f.menu Shell
-  "Applications" f.menu Applications
+  "Applications"	f.menu Applications
+  "Demos"		f.menu Demos
   "Internet"     f.menu Internet
   "System"       f.menu System
 }
