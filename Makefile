@@ -11,7 +11,7 @@ deb:
 	sudo apt install \
 	mwm libmotif-dev motif-clients \
 	xosview xfonts-100dpi xfonts-75dpi x11-apps \
-	freeglut3-dev rxvt-unicode firefox-esr nedit
+	freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage
 
 
 # Desktop configuration
