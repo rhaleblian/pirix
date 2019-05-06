@@ -41,7 +41,7 @@ Mwm*Emacs*iconImage: /home/pi/Pictures/pirix/icons/emacs.xpm
 Mwm*Mathematica*iconImage: /home/pi/Pictures/pirix/icons/mathematica.xpm
 
 
-! Appearance and Behavior
+! Appearance and Behaviour
 !
 Mwm*buttonBindings: ButtonBindings
 Mwm*frameBorderWidth: 6
@@ -80,10 +80,10 @@ Mwm*iconBoxTitle: Windows Overview
 
 ! emacs
 !
-!
 ! A: emacs needs Athena/Motif support built-in (and probably GTK built-out)
 !*menubar*FontSet: -adobe-helvetica-bold-o-normal--14-*-*-*-*-*-iso8859-1
 !Emacs.pane.menubar.*.fontList: -adobe-helvetica-bold-o-normal--14-*
+!Emacs.default.attributeFont: -b&h-lucidatypewriter-medium-*-*-*-14-*
 !
 ! B: xemacs, which honours X resources
 !XEmacs.default.attributeFont: -b&h-lucidatypewriter-medium-*-*-*-14-*
@@ -97,47 +97,39 @@ Emacs.pane.menubar.font: -adobe-helvetica-bold-o-normal--14-*
 XOsview*title: gr_osview
 XOsview*geometry: 300x400-10-10
 xosview*font: -adobe-helvetica-bold-o-normal--10-*
-xosview*background: gray60
+xosview*background: gray70
 xosview*foreground: gray10
-xosview*meterLabelColor: gray10
-xosview*usedlabels: False!
-xosview*usedLabelColor: gray70
+xosview*meterLabelColor: gray30
+xosview*usedlabels: False
+xosview*usedLabelColor: gray50
 ! LOAD
 xosview*load: False
 ! CPU
 xosview*cpuDecay: False
 xosview*cpuGraph: False
 xosview*cpuPriority: 10
-xosview*cpuFreeColor: gray70
+xosview*cpuFreeColor: gray50
 ! MEM
-xosview*memFreeColor: gray70
+xosview*memFreeColor: gray50
 ! DISK
-xosview*diskIdleColor: gray70
+xosview*diskIdleColor: gray50
 ! SWAP
-xosview*swapFreeColor: gray70
+xosview*swapFreeColor: gray50
 ! PAGE
-xosview*pageIdleColor: gray70
+xosview*pageIdleColor: gray50
 ! NET
-xosview*netBackground: gray70
+xosview*netBackground: gray50
 ! WLAN
 xosview*wireless: false
 ! BTRY
 xosview*battery: false
-xosview*btryBackground: gray70
-
-XClock*geometry: -16+16
-
-
-! nedit
-!
-NEdit*background: #cc9999
-NEdit*menuBar*background: #aaaaaa
+xosview*btryBackground: gray40
 
 
 ! winterm
 !
-URxvt*font: -b&h-lucidatypewriter-medium-*-*-*-14-*
-URxvt*boldFont: -b&h-lucidatypewriter-bold-*-*-*-14-*
+URxvt*font: -adobe-courier-medium-r-*-*-18-*-*-*-*-*-*-*
+URxvt*boldFont: -adobe-courier-bold-r-*-*-18-*-*-*-*-*-*-*
 !URxvt*geometry: 80x40
 !URxvt*background: #260033
 URxvt*background: #00003f
@@ -183,14 +175,17 @@ URxvt*scrollBar_right: false
 !*color14: #f8fc00
 ! ?
 !*color15: #f8fc00
-
-
-! bottom right
-!XConsole*geometry: 800x64+72-0
-! bottom center
-!XConsole*geometry: 800x64+560-0
-! bottom left
-XConsole*geometry: 800x64+0-0
-
-
 !!! </sgi-theme>
+
+
+! xclock
+!
+XClock*geometry: -16+16
+XClock*background: #cccccc
+
+
+! xconsole
+!
+XConsole*geometry: 800x64+16-16
+
+
