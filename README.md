@@ -43,7 +43,7 @@ A lot of things aren't here, including
 * add icon images for terminal, emacs, etc
 
 ## Credits
-IRIX - Silicon Graphics Computer Systems
-Motif - The Open Group
-Demos - opengl.org
+* IRIX - Silicon Graphics Computer Systems
+* Motif - The Open Group
+* GL Demos - opengl.org
 
