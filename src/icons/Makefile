@@ -4,6 +4,7 @@ TARGETS = \
 $(prefix)/epiphany-browser.xpm \
 $(prefix)/firefox-esr.xpm \
 $(prefix)/gitk.xpm \
+$(prefix)/mathematica.xpm \
 $(prefix)/winterm.xpm
 
 .xpm: .png
@@ -19,6 +20,9 @@ $(prefix)/firefox-esr.xpm: firefox-esr.png
 
 $(prefix)/gitk.xpm: gitk.png
 	convert $< -resize 128x128 $@
+
+$(prefix)/mathematica.xpm: mathematica.png
+	convert $< $@
 
 $(prefix)/winterm.xpm: winterm.png
 	convert $< $@

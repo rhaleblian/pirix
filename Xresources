@@ -30,15 +30,15 @@ Mwm*useIconBox: false
 
 !Mwm*client*backgroundPixmap: /usr/X11/bitmaps/stipple
 Mwm*client*title*activeBackground: #c5c1aa
-Mwm*client*iconImage: /home/pi/Pictures/pirix/icons/template.xpm
+Mwm*client*iconImage: /home/pi/.config/pirix/icons/template.xpm
 
 !Mwm*icon*foreground: #ff0000
 !Mwm*icon*foreground: #cc4ddd
 
-Mwm*URxvt*iconImage: /home/pi/Pictures/pirix/icons/winterm.xpm
-Mwm*Surf*iconImage: /home/pi/Pictures/pirix/icons/surf.xpm
-Mwm*Emacs*iconImage: /home/pi/Pictures/pirix/icons/emacs.xpm
-Mwm*Mathematica*iconImage: /home/pi/Pictures/pirix/icons/mathematica.xpm
+Mwm*URxvt*iconImage: /home/pi/.config/pirix/icons/winterm.xpm
+Mwm*Surf*iconImage: /home/pi/.config/pirix/icons/surf.xpm
+Mwm*Emacs*iconImage: /home/pi/.config/pirix/icons/emacs.xpm
+Mwm*Mathematica*iconImage: /home/pi/.config/pirix/icons/mathematica.xpm
 
 
 ! Appearance and Behaviour

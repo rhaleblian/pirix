@@ -3,6 +3,8 @@ PIRIX is an emulation of SGI's IRIX desktop environment on Raspberry Pi 3.
 
 [http://github.com/rhaleblian/pirix/blob/master/screenshot0.png]
 
+Besides being nostalgic, this desktop enviroment is fast and easy on Pi resources.
+
 ## Installation
 
 Examine the 'pirix' Make rule and confirm it won't whack any file you want to keep:
@@ -23,7 +25,7 @@ and run
 ## Goodies
 If you want the atlantis demo,
 
-    cd demo/atlantis
+    cd src/demo/atlantis
     make
     ./atlantis
 
