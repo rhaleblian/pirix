@@ -27,17 +27,6 @@ images:
 	install --mode=644 src/icons/*.xpm $(HOME)/Pictures/pirix/icons
 	install --mode=644 src/wallpaper/desktop.jpg $(HOME)/Pictures/pirix
 
-# NEdit
-
-build/nedit:
-	- mkdir build
-	git clone https://git.code.sf.net/p/nedit/git build/nedit
-
-build/nedit/source/nedit: build/nedit
-	cd build/nedit && make linux
-
-nedit: build/nedit/source/nedit
-
 
 # OpenGL Demos
 
