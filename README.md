@@ -7,7 +7,7 @@ Besides being nostalgic, this desktop enviroment is fast and easy on Pi resource
 
 ## Installation
 
-Examine the 'pirix' Make rule and confirm it won't whack any file you want to keep:
+Examine the 'install' Make rule and confirm it won't whack any file you want to keep:
 
     cat Makefile
 
