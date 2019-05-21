@@ -29,14 +29,15 @@ images:
 
 
 # OpenGL Demos
+# Does one need glut-3.6 for these?
 
-demo/atlantis/atlantis:
-	cd demo/atlantis && make
-demo/ideas/ideas:
-	cd demo/ideas && make
-demo/glutmech/glutmech:
-	cd demo/glutmech && make
-demos: demo/atlantis/atlantis demo/ideas/ideas demo/glutmech/glutmech
+src/demo/atlantis/atlantis:
+	cd src/demo/atlantis && make
+src/demo/ideas/ideas:
+	cd src/demo/ideas && make
+src/demo/glutmech/glutmech:
+	cd src/demo/glutmech && make
+src/demos: src/demo/atlantis/atlantis src/demo/ideas/ideas src/demo/glutmech/glutmech
 
 
 .PHONY: instructions pirix nedit deb demos
