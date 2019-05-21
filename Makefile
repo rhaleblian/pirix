@@ -16,14 +16,16 @@ deb:
 
 # Desktop configuration
 
-pirix: deb
-	install -d $(HOME)/Pictures/pirix/icons
+pirix: deb images
 	install --mode=644 Xresources $(HOME)/.Xresources
 	install --mode=644 pirixrc $(HOME)/.pirixrc
 	install --mode=644 mwmrc $(HOME)/.mwmrc
-	install --mode=644 desktop.jpg $(HOME)/Pictures/pirix
-	install --mode=644 icons/* $(HOME)/Pictures/pirix/icons
 
+images:
+	make -C src/icons
+	install -d $(HOME)/Pictures/pirix/icons
+	install --mode=644 src/icons/*.xpm $(HOME)/Pictures/pirix/icons
+	install --mode=644 src/wallpaper/desktop.jpg $(HOME)/Pictures/pirix
 
 # NEdit
 
