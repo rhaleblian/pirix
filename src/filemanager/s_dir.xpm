@@ -1,0 +1,28 @@
+/* XPM */
+/* $XConsortium: s_dir.xpm /main/4 1995/07/18 16:03:59 drk $ */
+static char * s_dir [] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"16 16 5 1 -1 -1",
+/* colors */
+" 	s topShadowColor	m white	c #c8c8c8c8c8c8",
+".	s bottomShadowColor	m black	c #646464646464",
+"X	s none	m none	c none",
+"o	s iconColor5	m black	c blue",
+"O	s iconColor1	m black	c black",
+/* pixels */
+"      .XXXXXXXXX",
+" ooooo.XXXXXXXXX",
+" ooooo.XXXXXXXXX",
+"                ",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+" OOOOOOOOOOOOOO.",
+"................"};

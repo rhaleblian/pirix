@@ -1,0 +1,26 @@
+/* XPM */
+/* $XConsortium: s_exec.xpm /main/4 1995/07/18 16:04:05 drk $ */
+static char * s_exec [] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"16 16 3 1 -1 -1",
+/* colors */
+" 	s none	m none	c none",
+".	s iconColor5	m black	c blue",
+"X	s iconColor6	m white	c yellow",
+/* pixels */
+"        .       ",
+"     .......    ",
+"   ...........  ",
+"  XX........... ",
+"  XXX.......... ",
+" XXXXX..........",
+" XXXXXX.........",
+" XXXXXXX........",
+"XXXXXXXXX.......",
+" XXXXXXXXX......",
+" XXXXXXXXXX.....",
+" XXXXXXXXXXX....",
+"  XXXXXXXXXXX.. ",
+"  XXXXXXXXXXXX. ",
+"   XXXXXXXXXXX  ",
+"     XXXXXXX    "};

@@ -1,0 +1,43 @@
+XCOMM Motif
+XCOMM
+XCOMM Copyright (c) 1987-2012, The Open Group. All rights reserved.
+XCOMM
+XCOMM These libraries and programs are free software; you can
+XCOMM redistribute them and/or modify them under the terms of the GNU
+XCOMM Lesser General Public License as published by the Free Software
+XCOMM Foundation; either version 2 of the License, or (at your option)
+XCOMM any later version.
+XCOMM
+XCOMM These libraries and programs are distributed in the hope that
+XCOMM they will be useful, but WITHOUT ANY WARRANTY; without even the
+XCOMM implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+XCOMM PURPOSE. See the GNU Lesser General Public License for more
+XCOMM details.
+XCOMM
+XCOMM You should have received a copy of the GNU Lesser General Public
+XCOMM License along with these librararies and programs; if not, write
+XCOMM to the Free Software Foundation, Inc., 51 Franklin Street, Fifth
+XCOMM Floor, Boston, MA 02110-1301 USA
+XCOMM 
+XCOMM 
+XCOMM HISTORY
+XCOMM
+XCOMM   $XConsortium: Imakefile /main/5 1995/07/14 09:41:26 drk $
+
+     DEMOLIBDIR = $(MTOP)/demos/lib
+        DEMOLIB = $(DEMOLIBDIR)/Xmd/libXmd.a
+        DEPLIBS = $(DEMOLIB) XmClientDepLibs
+LOCAL_LIBRARIES = $(DEMOLIB) XmClientLibs 
+  SYS_LIBRARIES = MathLibrary 
+ EXTRA_INCLUDES = -I$(DEMOLIBDIR)
+
+SRCS = filemanager.c actions.c readdir.c convert.c interface.c
+OBJS = filemanager.o actions.o readdir.o convert.o interface.o
+
+NormalLibraryObjectRule()
+
+MComplexProgramTarget(filemanager,$(LOCAL_LIBRARIES),NullParameter)
+
+InstallAppDefaults(XmdFilemanager)
+InstallManPage(filemanager,$(MANDIR))
+InstallMotifHelpFile(filemanager)

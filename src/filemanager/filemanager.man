@@ -1,0 +1,67 @@
+.\" $XConsortium: filemanager.man /main/4 1995/07/17 10:47:16 drk $
+.\" Motif
+.\"
+.\" Copyright (c) 1987-2012, The Open Group. All rights reserved.
+.\"
+.\" These libraries and programs are free software; you can
+.\" redistribute them and/or modify them under the terms of the GNU
+.\" Lesser General Public License as published by the Free Software
+.\" Foundation; either version 2 of the License, or (at your option)
+.\" any later version.
+.\"
+.\" These libraries and programs are distributed in the hope that
+.\" they will be useful, but WITHOUT ANY WARRANTY; without even the
+.\" implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+.\" PURPOSE. See the GNU Lesser General Public License for more
+.\" details.
+.\"
+.\" You should have received a copy of the GNU Lesser General Public
+.\" License along with these librararies and programs; if not, write
+.\" to the Free Software Foundation, Inc., 51 Franklin Street, Fifth
+.\" Floor, Boston, MA 02110-1301 USA
+...\" 
+...\" 
+...\" HISTORY
+...\" "
+.TH filemanager 1X MOTIF "Demonstration programs"
+.SH NAME
+\*Lfilemanager\*O\(emdisplay directories in a container.
+.SH SYNOPSIS
+.sS
+\*Lfilemanager\*O
+.sE
+.SH DESCRIPTION
+\*LFilemanager\*O
+provides a display of the contents of a directory as file and directory
+icons.  You may run it anywhere and it allows customization of the 
+icons and actions via the X resource mechanism.
+.SH X Defaults
+The class of this application is \fIXmDFilemanager\fR.  The following
+are examples of the right resources to change.  "suffix" can be any
+file suffix.  Pixmaps are specified in XPM format (see XmGetPixmap in the 
+Programmer's Reference for details on this subject).  
+
+Actions are specified as control strings for sprintf, where the %s is
+substituted for by the pathname of the object. "default_file" is
+defined as the type for unspecified non-executable files and
+"default_exec" for unspecified executable files.
+
+.nf
+.ta .25i 4i
+XmDFilemanager.types.suffix.largeIcon:	a large icon bitmap or pixmap
+XmDFilemanager.types.suffix.smallIcon:	a small icon bitmap or pixmap
+XmDFilemanager.types.suffix.action:	an action to take when activated
+XmDFilemanager.types.default_file.action:		$EDITOR %s
+XmDFilemanager.types.default_exec.action:		xterm -e %s
+XmDFilemanager*XmContainer.OutlineButton.shadowThickness:  0
+XmDFilemanager*XmContainer*foreground:	black
+XmDFilemanager*XmContainer*background:	gray90
+XmDFilemanager*XmContainer.selectColor:	lightblue
+XmDFilemanager*XmContainer.outlineIndentation:	30
+XmDFilemanager*XmContainer.expandedStatePixmap:	exp.xpm
+XmDFilemanager*XmContainer.collapsedStatePixmap:	col.xpm
+XmDFilemanager*XmContainer.outlineColumnWidth:	6cm
+XmDFilemanager*XmContainer.detailTabList:	+3cm,+3cm,+3cm
+XmDFilemanager*XmIconGadget.renderTable:	*helvetica-bold-r-*-10-*
+XmDFilemanager*XmIconGadget.shadowThickness:	0
+.fi

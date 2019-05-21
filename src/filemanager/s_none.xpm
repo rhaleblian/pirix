@@ -1,0 +1,29 @@
+/* XPM */
+/* $XConsortium: s_none.xpm /main/4 1995/07/18 16:04:22 drk $ */
+static char * s_none [] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"16 16 6 1 0 0",
+/* colors */
+" 	s iconColor1	m black	c black",
+".	s topShadowColor	m white	c #c8c8c8c8c8c8",
+"X	s none	m none	c none",
+"o	s iconColor2	m white	c white",
+"O	s bottomShadowColor	m black	c #646464646464",
+"+	s background	m black	c #969696969696",
+/* pixels */
+"  ........  XXXX",
+"   oooooo  OXXXX",
+".  oooooo  OXXXX",
+".o  ++++  oOXXXX",
+".oo  oo  ooOXXXX",
+".o++    +ooOXXXX",
+".ooo    oooOXXXX",
+".o+++  ooooOXXXX",
+".ooo    oooOXXXX",
+".ooo oo oooOXXXX",
+".oo  oo  ooOXXXX",
+".o  oooo  oOXXXX",
+".  oooooo  OXXXX",
+"  ooooooo  OXXXX",
+"  oooooooo  XXXX",
+" OOOOOOOOOO XXXX"};

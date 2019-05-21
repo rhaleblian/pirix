@@ -1,0 +1,97 @@
+! $XConsortium: XmdFilemanager.ad /main/4 1995/07/17 18:52:49 drk $
+! Motif
+!
+! Copyright (c) 1987-2012, The Open Group. All rights reserved.
+!
+! These libraries and programs are free software; you can
+! redistribute them and/or modify them under the terms of the GNU
+! Lesser General Public License as published by the Free Software
+! Foundation; either version 2 of the License, or (at your option)
+! any later version.
+!
+! These libraries and programs are distributed in the hope that
+! they will be useful, but WITHOUT ANY WARRANTY; without even the
+! implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+! PURPOSE. See the GNU Lesser General Public License for more
+! details.
+!
+! You should have received a copy of the GNU Lesser General Public
+! License along with these librararies and programs; if not, write
+! to the Free Software Foundation, Inc., 51 Franklin Street, Fifth
+! Floor, Boston, MA 02110-1301 USA
+! 
+! 
+! HISTORY
+!
+! Sample application defaults file
+!
+! Optionally place this file in your system's app-defaults directory, 
+! often found in /usr/lib/X11/app-defaults
+!
+
+
+! How often should filemanager check for the current directory being 
+! updated       
+*updateTime:				2000
+
+! The command run when you delete a file.  %s is replaced with the 
+! full pathname
+*deleteCommand:			rm %s
+
+! A simple type database to define icons and actions
+! the "type" is simply the suffix or the entire filename for files
+! containing no dots
+!
+! You can define a largeIcon, a smallIcon and an action.  The action has
+! the %s replaced by the full pathname of the file
+*types.o.largeIcon:			obj.xpm
+*types.c.largeIcon:			code.xpm
+*types.h.largeIcon:			code.xpm
+*types.xpm.largeIcon:			pix.xpm
+*types.xpm.smallIcon:			s_pix.xpm
+*types.xpm.action:			vueicon -f %s
+*types.filemanager.action:		%s
+*types.default_file.largeIcon:		file.xpm
+*types.default_file.smallIcon:		s_file.xpm
+*types.default_dir.largeIcon:		dir.xpm
+*types.default_dir.smallIcon:		s_dir.xpm
+*types.default_exec.largeIcon:		exec.xpm
+*types.default_exec.smallIcon:		s_exec.xpm
+*types.default_none.largeIcon:		none.xpm
+*types.default_none.smallIcon:		s_none.xpm
+*types.default_file.action:		$EDITOR %s
+*types.default_exec.action:		xterm -e %s
+
+! More resources.  These control the container
+!
+! Don't show any border on the outline expand/collapse button
+*XmContainer.OutlineButton.shadowThickness: 0
+
+! Nice defaults for the foreground, background and select colors
+*XmContainer*foreground:		black
+*XmContainer*background:		gray90
+*XmContainer.selectColor:		lightblue
+
+! This is the amount by which subdirectories will be indented
+*XmContainer.outlineIndentation:	3fu
+
+! This is the width of the first column in the detail view
+*XmContainer.outlineColumnWidth:	35fu
+
+! ... and these are the widths of the subsequent columns
+*XmContainer.detailTabList:		+9fu,+15fu,+10fu
+
+! This defines the font to be used for the icons.  Note that this
+! definition for the renderTable can be much more complex
+*XmIconGadget.renderTable:		*helvetica-bold-r-*-10-*
+
+! Don't show shadows around the iconGadget
+*XmIconGadget.shadowThickness:		0
+
+! Control the show_hidden menu item
+*show_hidden.labelString:		Show Hidden Files
+*show_hidden.indicatorOn:		XmINDICATOR_CHECK
+*show_hidden.indicatorSize:		15
+
+! What is the helpfile name
+*help_manager.helpFile:		filemanager

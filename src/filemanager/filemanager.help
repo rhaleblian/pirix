@@ -1,0 +1,20 @@
+<title>Introduction</title>
+<bold>Filemanager</bold> is a demonstration of the XmContainer widget, the
+XmIconGadget, the Motif pixmap reader (which now can read XPM
+files) and also serves to show the usage of the X resource mechanism.
+
+It does allow for some configuration of actions and icons.
+
+To use the demo,  simply run it from the directory of interest.
+Navigation is obtained by activating (double clicking) the folder
+icons (.., or a subdir),  by selecting a parent directory from the
+option menu,  or by using the "Open..." menu item to enter a
+pathname.
+
+Read the man page for details on setting resources to customize
+the application.
+
+The xpm files supplied can be installed in your normal bitmap/pixmap
+repository and note that you can customize this for Motif by using
+the XBMLANGPATH environment variable.
+

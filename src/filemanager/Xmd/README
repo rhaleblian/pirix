@@ -1,0 +1,6 @@
+/* $XConsortium: README /main/3 1996/07/15 14:00:10 drk $ */
+This directory contains a utility library for the Motif demos.
+
+The library includes a Help widget.
+
+It will includes some other stuff in awhile.
