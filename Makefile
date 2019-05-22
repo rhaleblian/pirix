@@ -5,9 +5,9 @@ instructions:
 	@echo Then see README.md for the remaining steps.
 
 install: apt-install icons 
-	install --mode=644 Xresources $(HOME)/.Xresources
-	install --mode=644 pirixrc $(HOME)/.pirixrc
-	install --mode=644 mwmrc $(HOME)/.mwmrc
+	install --mode=644 src/Xresources $(HOME)/.Xresources
+	install --mode=644 src/pirixrc $(HOME)/.pirixrc
+	install --mode=644 src/mwmrc $(HOME)/.mwmrc
 	install -d $(HOME)/.config/pirix/icons
 	install --mode=644 src/icons/*.xpm $(HOME)/.config/pirix/icons
 	install --mode=644 src/wallpaper/desktop.jpg $(HOME)/Pictures/pirix
@@ -29,7 +29,6 @@ icons:
 
 
 # OpenGL Demos
-# Does one need glut-3.6 for these?
 
 demos: src/demo/atlantis/atlantis src/demo/ideas/ideas src/demo/glutmech/glutmech
 src/demo/atlantis/atlantis:
