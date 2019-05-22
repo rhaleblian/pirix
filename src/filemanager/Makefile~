@@ -1,4 +1,0 @@
-#AM_CPPFLAGS = -I$(srcdir)/../../lib -I$(srcdir)/../../../lib -I$(top_builddir)/lib ${X_CFLAGS} 
-
-default:
-	gcc convert.c
