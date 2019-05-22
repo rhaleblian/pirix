@@ -1,11 +1,13 @@
 /build
+/src/Xmd/libXmd.so
 /src/demo/atlantis/atlantis
 /src/demo/glutmech/glutmech
 /src/demo/ideas/ideas
 /src/demo/gears/gears
 /src/demo/mui
 /src/demo/texfont
+/src/filemanager/filemanager
 /src/icons/*.xpm
-/glut-3.6
 *.o
 *.zip
+
