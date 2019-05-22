@@ -9,9 +9,9 @@ Besides being nostalgic, this desktop enviroment is fast and easy on Pi resource
 
 Examine the 'install' Make rule and confirm it won't whack any file you want to keep:
 
-    cat Makefile
+    cat src/Makefile
 
-If it's safe, invoke the rule via 'make pirix'.
+If it's safe, invoke the rule via 'make install'.
 
 To start PIRIX via startx, put this in your $(HOME)/.xinitrc :
 

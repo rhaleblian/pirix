@@ -8,6 +8,7 @@
 /src/demo/texfont
 /src/filemanager/filemanager
 /src/icons/*.xpm
+*~
 *.o
 *.zip
 
