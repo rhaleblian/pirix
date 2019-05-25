@@ -5,7 +5,7 @@ interface.c \
 readdir.c
 OBJECTS = *.o
 CFLAGS = -I.. -g
-LDFLAGS = -L../Xmd -lX11 -lXm -lXt -lXmd
+LDFLAGS = -L/usr/local/lib -lX11 -lXm -lXt -lXmd
 
 filemanager: $(SOURCES)
 	gcc $(CFLAGS) $(SOURCES) -o filemanager $(LDFLAGS)
