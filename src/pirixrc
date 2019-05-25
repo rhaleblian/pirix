@@ -1,8 +1,8 @@
 
 function pirix
 {
-    xrdb -load $HOME/.Xresources
-    xloadimage -onroot -fullscreen .config/pirix/desktop.jpg
+    xrdb -load $HOME/.config/pirix/Xresources
+    xloadimage -onroot -fullscreen $HOME/.config/pirix/wallpaper/desktop.jpg
     xclock &
     xosview &
     urxvt -geometry 80x40 -iconic &

@@ -1,6 +1,7 @@
 prefix := $(HOME)/.config/pirix/icons
 
 TARGETS = \
+$(prefix)/client.xpm \
 $(prefix)/epiphany-browser.xpm \
 $(prefix)/firefox-esr.xpm \
 $(prefix)/gitk.xpm \
@@ -13,6 +14,9 @@ $(prefix)/winterm.xpm
 	convert $< $@
 
 all: $(TARGETS)
+
+$(prefix)/client.xpm: client.png
+	convert $< $@
 
 $(prefix)/epiphany-browser.xpm: epiphany-browser.png
 	convert $< -resize 128x128 $@
@@ -34,6 +38,12 @@ $(prefix)/surf.xpm: surf.png
 
 $(prefix)/winterm.xpm: winterm.png
 	convert $< $@
+
+install: $(HOME)/.config/pirix/icons $(TARGETS)
+
+
+$(HOME)/.config/pirix/icons:
+	install -d $(HOME)/.config/pirix/icons
 
 clean:
 	- rm *.xpm

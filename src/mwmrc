@@ -55,7 +55,7 @@ Menu RootMenu
   "Refresh All"  _f  f.refresh
 
   no-label           f.separator
-  "Reload"           f.exec "xrdb ~/.Xresources &"
+  "Reload"           f.exec "xrdb ~/.config/pirix/Xresources &"
   "Restart..."   _R  f.restart
   "Exit..."      _x  f.quit_mwm
 }

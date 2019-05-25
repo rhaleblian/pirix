@@ -35,10 +35,11 @@ Mwm*client*iconImage: /home/pi/.config/pirix/icons/template.xpm
 !Mwm*icon*foreground: #ff0000
 !Mwm*icon*foreground: #cc4ddd
 
-Mwm*URxvt*iconImage: /home/pi/.config/pirix/icons/winterm.xpm
-Mwm*Surf*iconImage: /home/pi/.config/pirix/icons/surf.xpm
 Mwm*Emacs*iconImage: /home/pi/.config/pirix/icons/emacs.xpm
+Mwm*Firefox-esr*iconImage: /home/pi/.config/pirix/icons/firefox-esr.xpm
 Mwm*Mathematica*iconImage: /home/pi/.config/pirix/icons/mathematica.xpm
+Mwm*Surf*iconImage: /home/pi/.config/pirix/icons/surf.xpm
+Mwm*URxvt*iconImage: /home/pi/.config/pirix/icons/winterm.xpm
 
 
 ! Appearance and Behaviour

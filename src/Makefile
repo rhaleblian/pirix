@@ -4,13 +4,18 @@ instructions:
 	@echo "If it is not destructive, run 'make install'."
 	@echo Then see README.md for the remaining steps.
 
-install: apt-install icons
-	install --mode=644 Xresources $(HOME)/.Xresources
-	install --mode=644 pirixrc $(HOME)/.pirixrc
-	install --mode=644 mwmrc $(HOME)/.mwmrc
-	install -d $(HOME)/.config/pirix/icons
-	install --mode=644 icons/*.xpm $(HOME)/.config/pirix/icons
-	install --mode=644 wallpaper/desktop.jpg $(HOME)/Pictures/pirix
+install: apt-install install-rc install-icons
+	install -d $(HOME)/.config/pirix/wallpaper
+	install --mode=644 wallpaper/desktop.jpg $(HOME)/.config/pirix/wallpaper
+
+install-rc:
+	install -d $(HOME)/.config/pirix
+	install --mode=644 Xresources $(HOME)/.config/pirix/Xresources
+	install --mode=644 pirixrc $(HOME)/.config/pirix/pirixrc
+	install --mode=644 mwmrc $(HOME)/.config/pirix/mwmrc
+
+install-icons:
+	make -C icons install
 
 
 # Operating system packages
