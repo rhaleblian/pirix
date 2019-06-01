@@ -18,7 +18,7 @@ If it's safe, invoke the rule via
 
     make install
 
-Let mwm see pirix' configuration for it:
+Let mwm see PIRIX' configuration for it:
 
     cd $HOME
     ln -s .config/pirix/mwmrc .mwmrc
@@ -50,8 +50,9 @@ SGI's Indigo Magic Desktop and Interactive Desktop were derivations from the Mot
 accordingly, this tweak bases itself on mwm.
 
 A lot of things aren't here, including
-* the toolchest
-* the file manager 
+* styling modifications to MWM (those rounded windows and scrollbars)
+* the toolchest (i think you could write an Xm app of buttons with menus and no frame)
+* the file manager (remember that they drew scalable vector icons)
 * a contemporary web browser (Netscape Navigator or NCSA Mosaic)
 
 ## TODO
@@ -59,6 +60,7 @@ A lot of things aren't here, including
 * somebody write a toolchest replacement
 * there's a starting point for a file manager at src/pirix/filemanager
 * add icon images for more applications
+* other omissions mentioned in the notes you may have just read
 
 ## Credits
 
