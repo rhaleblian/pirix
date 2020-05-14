@@ -4,7 +4,7 @@ instructions:
 	@echo "If it is not destructive, run 'make install'."
 	@echo Then see README.md for the remaining steps.
 
-install: apt-install install-rc install-icons
+install: install-rc install-icons
 	install -d $(HOME)/.config/pirix/wallpaper
 	install --mode=644 wallpaper/desktop.jpg $(HOME)/.config/pirix/wallpaper
 
@@ -13,6 +13,7 @@ install-rc:
 	install --mode=644 Xresources $(HOME)/.config/pirix/Xresources
 	install --mode=644 pirixrc $(HOME)/.config/pirix/pirixrc
 	install --mode=644 mwmrc $(HOME)/.config/pirix/mwmrc
+	ln -s $(HOME)/.config/pirix/mwmrc $(HOME)/.mwmrc
 
 install-icons:
 	make -C icons install
@@ -24,7 +25,8 @@ apt-install:
 	sudo apt install \
 	mwm libmotif-dev motif-clients \
 	xosview xfonts-100dpi xfonts-75dpi x11-apps \
-	freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage
+	freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage \
+	imagemagick
 
 
 # Desktop configuration
