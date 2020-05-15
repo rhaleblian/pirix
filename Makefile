@@ -8,3 +8,6 @@ instructions:
 install:
 	make -C src install
 
+prerequisites:
+	sudo apt install rxvt-unicode xloadimage x11-apps
+
