@@ -2,8 +2,9 @@
 
 piRIX is an emulation of SGI's IRIX desktop environment on Raspberry Pi 3.
 
-![screenshot](etc/screenshot0.png)
+![screenshot](etc/screenshot2.png)
 ![screenshot](etc/screenshot1.png)
+![screenshot](etc/screenshot0.png)
 
 Besides being nostalgic, this desktop enviroment is fast and easy on Pi resources.
 
@@ -24,9 +25,16 @@ Put this in your $HOME/.xinitrc :
     . $HOME/.config/pirix/pirixrc
     pirix
 
-Finally, run
+If you're booting directly to PIXEL Desktop, change your boot setting
+with `raspi-config` to drop into a shell. Then run
 
     startx
+
+
+
+## Where is the Toolchest?
+
+Find a simulacrum by pressing your left mouse button over the desktop root window.
 
 
 ## Goodies
