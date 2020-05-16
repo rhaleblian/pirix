@@ -10,21 +10,18 @@ Besides being nostalgic, this desktop enviroment is fast and easy on Pi resource
 
 ## Installation
 
-For a message about installation caveats,
+Files will be installed to
 
-    make
+    .config/pirix
+    .mwmrc
 
-Examine the 'install' Make rule and confirm it won't whack any file you want to keep:
+in your home directory. To install:
 
-    cat src/Makefile
-
-If it's safe, invoke the rule via 
-
-    make install
+     make install
 
 Put this in your $HOME/.xinitrc :
 
-    . /home/pi/.config/pirix/pirixrc
+    . $HOME/.config/pirix/pirixrc
     pirix
 
 Finally, run
@@ -42,17 +39,23 @@ If you want the atlantis demo,
 
 Follow the same pattern for the ideas and glutmech demos.
 
+On a Pi 3B running Raspbian Buster, the GL demos run too fast! :D
+
 
 ## Notes
 
-SGI's Indigo Magic Desktop and Interactive Desktop were derivations from the Motif Window Manager;
-accordingly, this tweak bases itself on mwm.
+SGI's Indigo Magic Desktop and Interactive Desktop were derivations
+from the Motif Window Manager; accordingly, this tweak bases itself on mwm.
 
 A lot of things aren't here, including
 * styling modifications to MWM (those rounded windows and scrollbars)
-* the toolchest (i think you could write an Xm app of buttons with menus and no frame)
+* the toolchest (i think you could write an Xm app of buttons with menus
+  and no frame)
 * the file manager (remember that they drew scalable vector icons)
 * a contemporary web browser (Netscape Navigator or NCSA Mosaic)
+
+Firefox is the defined browser, in the spirit of being a successor
+to Navigator.
 
 
 ## TODO
@@ -68,4 +71,3 @@ A lot of things aren't here, including
 * IRIX - Silicon Graphics Computer Systems
 * Motif - The Open Group
 * GL Demos - opengl.org
-

@@ -6,7 +6,7 @@ instructions:
 
 install: install-rc install-icons
 	install -d $(HOME)/.config/pirix/wallpaper
-	install --mode=644 wallpaper/desktop.jpg $(HOME)/.config/pirix/wallpaper
+	install --mode=644 wallpaper/desktop*.jpg $(HOME)/.config/pirix/wallpaper
 
 install-rc:
 	install -d $(HOME)/.config/pirix
