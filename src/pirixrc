@@ -1,7 +1,7 @@
 
 function pirix
 {
-    xrdb -load $HOME/.config/pirix/Xresources
+    xrdb -load -DHOME=$HOME $HOME/.config/pirix/Xresources
     xsetbg $HOME/.config/pirix/wallpaper/desktop.jpg
     xclock &
     xosview &
