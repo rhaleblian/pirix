@@ -1,6 +1,6 @@
 # pirix
 
-PIRIX is an emulation of SGI's IRIX desktop environment on Raspberry Pi 3.
+piRIX is an emulation of SGI's IRIX desktop environment on Raspberry Pi 3.
 
 ![screenshot](etc/screenshot0.png)
 ![screenshot](etc/screenshot1.png)
@@ -10,6 +10,10 @@ Besides being nostalgic, this desktop enviroment is fast and easy on Pi resource
 
 ## Installation
 
+For a message about installation caveats,
+
+    make
+
 Examine the 'install' Make rule and confirm it won't whack any file you want to keep:
 
     cat src/Makefile
@@ -17,11 +21,6 @@ Examine the 'install' Make rule and confirm it won't whack any file you want to 
 If it's safe, invoke the rule via 
 
     make install
-
-Let mwm see PIRIX' configuration for it:
-
-    cd $HOME
-    ln -s .config/pirix/mwmrc .mwmrc
 
 Put this in your $HOME/.xinitrc :
 
@@ -55,12 +54,14 @@ A lot of things aren't here, including
 * the file manager (remember that they drew scalable vector icons)
 * a contemporary web browser (Netscape Navigator or NCSA Mosaic)
 
+
 ## TODO
 
 * somebody write a toolchest replacement
 * there's a starting point for a file manager at src/pirix/filemanager
 * add icon images for more applications
 * other omissions mentioned in the notes you may have just read
+
 
 ## Credits
 
