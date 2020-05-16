@@ -12,7 +12,7 @@ install-rc:
 	install -d $(HOME)/.config/pirix
 	install --mode=644 Xresources $(HOME)/.config/pirix/Xresources
 	install --mode=644 pirixrc $(HOME)/.config/pirix/pirixrc
-	install --mode=644 mwmrc $(HOME)/Mwm
+	install --mode=644 mwmrc $(HOME)/.mwmrc
 
 install-icons:
 	make -C icons install
