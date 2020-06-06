@@ -5,17 +5,16 @@ instructions:
 	@echo Then see README.md for the remaining steps.
 
 install: install-rc install-icons
-	install -d $(HOME)/.config/pirix/wallpaper
-	install --mode=644 wallpaper/desktop*.jpg $(HOME)/.config/pirix/wallpaper
+	install -d $(DESTDIR)/share
+	install --mode=644 wallpaper/desktop*.jpg $(DESTDIR)/share
 
 install-rc:
-	install -d $(HOME)/.config/pirix
-	install --mode=644 Xresources $(HOME)/.config/pirix/Xresources
-	install --mode=644 pirixrc $(HOME)/.config/pirix/pirixrc
-	install --mode=644 mwmrc $(HOME)/.mwmrc
+	install -d $(DESTDIR)/etc
+	install --mode=644 --target-directory $(DESTDIR)/etc Xresources pirixrc mwmrc
 
 install-icons:
 	make -C icons install
+
 
 # Desktop configuration
 

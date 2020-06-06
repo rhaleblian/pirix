@@ -1,4 +1,4 @@
-prefix := $(HOME)/.config/pirix/icons
+prefix ?= $(DESTDIR)/share/icons
 
 TARGETS = \
 $(prefix)/client.xpm \
@@ -39,11 +39,11 @@ $(prefix)/surf.xpm: surf.png
 $(prefix)/winterm.xpm: winterm.png
 	convert $< $@
 
-install: $(HOME)/.config/pirix/icons $(TARGETS)
+install: $(prefix) $(TARGETS)
 
 
-$(HOME)/.config/pirix/icons:
-	install -d $(HOME)/.config/pirix/icons
+$(prefix):
+	install -d $(prefix)
 
 clean:
 	- rm *.xpm
