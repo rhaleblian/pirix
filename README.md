@@ -13,9 +13,11 @@ Besides being nostalgic, this desktop enviroment is fast and easy on Pi resource
 
 On Debian distributions, you'll need a few packages first:
 
-    apt install imagemagick urxvt
+    make debian
 
-Fedora distributions may name these differently.
+as superuser.
+
+Fedora distributions will need a similar installation.
 
 Files will be installed to
 

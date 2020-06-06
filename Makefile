@@ -8,6 +8,9 @@ instructions:
 	@echo "If that is not non-destructive, run 'make install'."
 	@echo Then see README.md for the remaining steps.
 
+debian:
+	apt install urxvt xosview mwm imagemagick
+
 install:
 	make -C src install
 
