@@ -11,6 +11,12 @@ Besides being nostalgic, this desktop enviroment is fast and easy on Pi resource
 
 ## Installation
 
+On Debian distributions, you'll need a few packages first:
+
+    apt install imagemagick urxvt
+
+Fedora distributions may name these differently.
+
 Files will be installed to
 
     .config/pirix
