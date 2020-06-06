@@ -17,17 +17,6 @@ install-rc:
 install-icons:
 	make -C icons install
 
-
-# Operating system packages
-
-apt-install:
-	sudo apt install \
-	mwm libmotif-dev motif-clients \
-	xosview xfonts-100dpi xfonts-75dpi x11-apps \
-	freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage \
-	imagemagick
-
-
 # Desktop configuration
 
 icons:

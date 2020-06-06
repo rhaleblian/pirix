@@ -11,22 +11,17 @@ Besides being nostalgic, this desktop enviroment is fast and easy on Pi resource
 
 ## Installation
 
-On Debian distributions, you'll need a few packages first:
+On Debian distributions, you'll need a few packages first. Run
 
-    make debian
+    ./configure
 
 as superuser.
 
 Fedora distributions will need a similar installation.
 
-Files will be installed to
+Then install:
 
-    .config/pirix
-    .mwmrc
-
-in your home directory. To install:
-
-     make install
+    make install
 
 Put this in your $HOME/.xinitrc :
 
@@ -37,6 +32,14 @@ If you're booting directly to PIXEL Desktop, change your boot setting
 with `raspi-config` to drop into a shell. Then run
 
     startx
+
+
+## What Gets Installed?
+
+Files will be installed to
+
+    $HOME/.config/pirix
+    $HOME/.mwmrc
 
 
 ## Removal
