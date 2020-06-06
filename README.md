@@ -39,6 +39,13 @@ with `raspi-config` to drop into a shell. Then run
     startx
 
 
+## Removal
+
+rm -r $HOME/.config/pirix
+rm $HOME/.mwmrc
+
+and undo anything you did to $HOME/.xinitrc.
+
 
 ## Where is the Toolchest?
 

@@ -9,7 +9,7 @@ instructions:
 	@echo Then see README.md for the remaining steps.
 
 debian:
-	apt install urxvt xosview mwm imagemagick
+	apt install urxvt xosview mwm imagemagick x11-apps
 
 install:
 	make -C src install
