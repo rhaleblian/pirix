@@ -1,4 +1,4 @@
-# pirix
+# piRIX
 
 piRIX is an emulation of SGI's IRIX desktop environment on Raspberry Pi 3.
 
