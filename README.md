@@ -44,8 +44,8 @@ Files will be installed to
 
 ## Removal
 
-rm -r $HOME/.config/pirix
-rm $HOME/.mwmrc
+    rm -r $HOME/.config/pirix
+    rm $HOME/.mwmrc
 
 and undo anything you did to $HOME/.xinitrc.
 
