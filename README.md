@@ -39,12 +39,15 @@ with `raspi-config` to drop into a shell. Then run
 Files will be installed to
 
     $HOME/.config/pirix
+    $HOME/.mwmrc
+
+Please check that this won't stomp anything you want to keep.
 
 
 ## Removal
 
     rm -r $HOME/.config/pirix
-
+    rm $HOME/.mwmrc
 
 and undo anything you did to $HOME/.xinitrc.
 
