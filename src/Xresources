@@ -55,7 +55,7 @@ Mwm*iconImageMaximum: 85x67
 Mwm*iconPlacement: left top tight
 Mwm*iconPlacementMargin: 10
 Mwm*keyBindings: KeyBindings
-Mwm*keyboardFocusPolicy: pointer
+Mwm*keyboardFocusPolicy: explicit
 Mwm*limitResize: true
 Mwm*lowerOnIconify: false
 Mwm*moveThreshold: 3
