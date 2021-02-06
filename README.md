@@ -70,6 +70,18 @@ Follow the same pattern for the ideas and glutmech demos.
 On a Pi 3B running Raspbian Buster, the GL demos run too fast! :D
 
 
+## Does this Hackamadoodle only work on the Pi?
+
+Actually it ought to work in many other Linux contexts, like clan Debian or clan Fedora.
+There have been minor problems with OpenBSD but we hear it still works.
+
+This hackamadoodle really just sets resources for `mwm` so that you get that CDE-like feeling.
+So if your whatever-NIX has `mwm` you're mostly there. For example, WSL2 has `mwm` so @rhaleblian
+runs this in Windows too, using the X410 app ...
+
+If you get it working in macOS, post about that.
+
+
 ## Notes
 
 SGI's Indigo Magic Desktop and Interactive Desktop were derivations
