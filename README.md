@@ -70,7 +70,7 @@ Follow the same pattern for the ideas and glutmech demos.
 On a Pi 3B running Raspbian Buster, the GL demos run too fast! :D
 
 
-## Does this Hackamadoodle only work on the Pi?
+## Does this hackamadoodle only work on the Pi?
 
 Actually it ought to work in many other Linux contexts, like clan Debian or clan Fedora.
 There have been minor problems with OpenBSD but we hear it still works.
