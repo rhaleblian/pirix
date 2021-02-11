@@ -1,2 +1,8 @@
-make debian
+uname -a | grep WSL > /dev/null
+if [ $? == 0 ]
+then
+	make configure-wsl
+else
+	make configure-debian
+fi
 

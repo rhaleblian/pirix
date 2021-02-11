@@ -10,13 +10,24 @@ instructions:
 
 # Operating system packages
 
-debian:
+configure-debian:
 	apt install \
 	mwm libmotif-dev motif-clients \
 	xosview xfonts-100dpi xfonts-75dpi x11-apps \
 	freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage \
 	imagemagick
 
+configure-wsl:
+	apt install \
+	mwm libmotif-dev motif-clients \
+	xosview xfonts-100dpi xfonts-75dpi x11-apps \
+	freeglut3-dev rxvt-unicode nedit xloadimage \
+	imagemagick
+
+demos:
+	make -C src/demo/atlantis
+	make -C src/demo/ideas
+	make -C src/demo/gears
 
 install:
 	make -C src install
