@@ -1,12 +1,14 @@
 # piRIX
 
-piRIX is an emulation of SGI's IRIX Interactive Desktop on Raspberry Pi 3/4 (and some other platforms).
+piRIX is an emulation of SGI's IRIX Interactive Desktop on Raspberry Pi 3/4
+(and some other platforms).
 
 ![screenshot](etc/screenshot2.png)
 ![screenshot](etc/screenshot1.png)
 ![screenshot](etc/screenshot0.png)
 
-Besides being nostalgic, this desktop environment is fast and easy on Pi resources.
+Besides being nostalgic, this desktop environment is fast and easy on Pi 
+resources.
 
 
 ## Installation
@@ -54,7 +56,8 @@ and undo anything you did to $HOME/.xinitrc.
 
 ## Where is the Toolchest?
 
-Find a simulacrum by pressing your left mouse button over the desktop root window.
+Find a simulacrum by pressing your left mouse button over the desktop
+root window.
 
 
 ## Goodies
@@ -72,12 +75,14 @@ On a Pi 3B running Raspbian Buster, the GL demos run too fast! :D
 
 ## Does this hackamadoodle only work on the Pi?
 
-Actually it ought to work in many other Linux contexts, like clan Debian or clan Fedora.
-There have been minor problems with OpenBSD but we hear it still works.
+Actually it ought to work in many other Linux contexts, like clan Debian
+or clan Fedora.  There have been minor problems with OpenBSD but we hear
+it still works.
 
-This hackamadoodle really just sets resources for `mwm` so that you get that CDE-like feeling.
-So if your whatever-NIX has `mwm` you're mostly there. For example, WSL2 has `mwm` so @rhaleblian
-runs this in Windows too, using the X410 app ...
+This hackamadoodle really just sets resources for `mwm` so that you get
+that CDE-like feeling.  So if your whatever-NIX has `mwm` you're mostly
+there. For example, WSL2 has `mwm` so @rhaleblian runs this in Windows too,
+using the X410 app ...
 
 If you get it working in macOS, post about that.
 
