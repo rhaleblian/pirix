@@ -6,6 +6,6 @@ function pirix
     xclock &
     xosview &
     urxvt -geometry 80x40 &
-    mwm
+    mwm -xrm "mwm*configFile: $HOME/.config/pirix/mwmrc"
 }
 
