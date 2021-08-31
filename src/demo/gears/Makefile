@@ -21,6 +21,10 @@ LDIRT = *~ *.bak *.pure
 
 default : $(TARGETS)
 
+install : $(TARGETS)
+	install -d ~/.config/pirix/demos
+	install gears ~/.config/pirix/demos
+
 gears : $(OBJS) $(GLUT)
 	$(CC) -o $@ $(OBJS) $(LDFLAGS)
 

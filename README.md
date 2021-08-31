@@ -41,7 +41,6 @@ with `raspi-config` to drop into a shell. Then run
 Files will be installed to
 
     $HOME/.config/pirix
-    $HOME/.mwmrc
 
 Please check that this won't stomp anything you want to keep.
 
@@ -49,15 +48,14 @@ Please check that this won't stomp anything you want to keep.
 ## Removal
 
     rm -r $HOME/.config/pirix
-    rm $HOME/.mwmrc
 
 and undo anything you did to $HOME/.xinitrc.
 
 
 ## Where is the Toolchest?
 
-Find a simulacrum by pressing your left mouse button over the desktop
-root window.
+Find a simulacrum by pressing your left mouse button
+over the desktop root window.
 
 
 ## Goodies
@@ -65,12 +63,10 @@ root window.
 If you want the atlantis demo,
 
     cd src/demo/atlantis
-    make
-    ./atlantis
+    make install
 
-Follow the same pattern for the ideas and glutmech demos.
-
-On a Pi 3B running Raspbian Buster, the GL demos run too fast! :D
+Follow the same pattern for any of the other demos.
+The Toolchest has menu items to launch them.
 
 
 ## Does this hackamadoodle only work on the Pi?

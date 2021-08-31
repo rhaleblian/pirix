@@ -24,7 +24,12 @@ LDIRT = *~ *.bak *.pure
 
 default : $(TARGETS)
 
+install : $(TARGETS)
+	install -d ~/.config/pirix/demos
+	install glutmech ~/.config/pirix/demos
+
 glutmech : $(OBJS) $(GLUT)
 	$(CC) -o $@ $(OBJS) $(LDFLAGS)
 
 include $(COMMONRULES)
+

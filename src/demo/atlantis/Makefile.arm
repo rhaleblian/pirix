@@ -25,6 +25,10 @@ LDIRT = *~ mjkimage.c *.bak *.pure
 
 default : $(TARGETS)
 
+install : $(TARGETS)
+	install -d ~/.config/pirix/demos
+	install atlantis ~/.config/pirix/demos
+
 atlantis : atlantis.o whale.o dolphin.o shark.o swim.o
 	$(RM) $@
 	$(CC) -o $@ atlantis.o whale.o dolphin.o shark.o swim.o $(LDFLAGS)
