@@ -49,7 +49,7 @@ Please check that this won't stomp anything you want to keep.
 
     rm -r $HOME/.config/pirix
 
-and undo anything you did to $HOME/.xinitrc.
+and undo anything you did to `$HOME/.xinitrc`.
 
 
 ## Where is the Toolchest?
