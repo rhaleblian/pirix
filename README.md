@@ -88,10 +88,10 @@ If you get it working in macOS, post about that.
 ## Notes
 
 SGI's Indigo Magic Desktop and Interactive Desktop seem to bear similaries
-to CDE and Motif; accordingly, this tweak bases itself on mwm.
+to CDE and Motif; accordingly, this tweak bases itself on `mwm` at el.
 
 A lot of things aren't here, including
-* styling modifications to MWM (those rounded windows and scrollbars)
+* styling modifications to Motif (those rounded windows and scrollbars)
 * the toolchest (i think you could write an Xm app of buttons with menus
   and no frame)
 * the file manager (remember that they drew scalable vector icons)
