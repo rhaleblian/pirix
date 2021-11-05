@@ -87,8 +87,8 @@ If you get it working in macOS, post about that.
 
 ## Notes
 
-SGI's Indigo Magic Desktop and Interactive Desktop were derivations
-from the Motif Window Manager; accordingly, this tweak bases itself on mwm.
+SGI's Indigo Magic Desktop and Interactive Desktop seem to bear similaries
+to CDE and Motif; accordingly, this tweak bases itself on mwm.
 
 A lot of things aren't here, including
 * styling modifications to MWM (those rounded windows and scrollbars)
