@@ -54,7 +54,8 @@ and undo anything you did to `$HOME/.xinitrc`.
 
 ## Where is the Toolchest?
 
-Find a simulacrum by pressing your left mouse button
+There ain't none.
+Find a compromise by pressing your left mouse button
 over the desktop root window.
 
 
