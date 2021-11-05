@@ -67,7 +67,8 @@ If you want the atlantis demo,
     make install
 
 Follow the same pattern for any of the other demos.
-The Toolchest has menu items to launch them.
+The Toolchest (well, the thing that must serve for it)
+has menu items to launch them.
 
 
 ## Does this hackamadoodle only work on the Pi?
