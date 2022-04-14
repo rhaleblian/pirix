@@ -15,11 +15,13 @@ resources.
 
 On Debian distributions, you'll need a few packages first. Run
 
-    ./configure
+    sudo apt install \
+    mwm libmotif-dev motif-clients \
+    xosview xfonts-100dpi xfonts-75dpi x11-apps libxi-dev libxm-dev \
+    freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage \
+    imagemagick
 
-as superuser.
-
-Fedora distributions will need a similar installation.
+As usual, Fedora distributions will use different names for these packages.
 
 Then install:
 
