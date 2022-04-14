@@ -27,7 +27,7 @@ Then install:
 
     make install
 
-Put this in your $HOME/.xinitrc :
+Put this in your `$HOME/.xinitrc` or `$HOME/.xsession` file:
 
     . $HOME/.config/pirix/pirixrc
     pirix
@@ -36,6 +36,10 @@ If you're booting directly to PIXEL Desktop, change your boot setting
 with `raspi-config` to drop into a shell. Then run
 
     startx
+
+We mentioned `.xsession` because some remote desktop mechanisms
+and display manager like `xrdp` will use that file instead.
+Salient if you, say, want piRIX to be available from your login screen.
 
 
 ## What Gets Installed?
@@ -77,12 +81,11 @@ has menu items to launch them.
 
 Actually it ought to work in many other Linux contexts, like clan Debian
 or clan Fedora.  There have been minor problems with OpenBSD but we hear
-it still works.
+it still works.  @rhaleblian even got it working in WSL2 and X410.
 
 This hackamadoodle really just sets resources for `mwm` so that you get
-that CDE-like feeling.  So if your whatever-NIX has `mwm` you're mostly
-there. For example, WSL2 has `mwm` so @rhaleblian runs this in Windows too,
-using the X410 app ...
+that particular CDE-like feeling.
+So if your whatever-NIX has `mwm` you're mostly there.
 
 If you get it working in macOS, post about that.
 
@@ -90,7 +93,8 @@ If you get it working in macOS, post about that.
 ## Notes
 
 SGI's Indigo Magic Desktop and Interactive Desktop seem to bear similaries
-to CDE and Motif; accordingly, this tweak bases itself on `mwm` at el.
+to CDE and Motif, being a derivation;
+accordingly, this tweak bases itself on `mwm` at el.
 
 A lot of things aren't here, including
 * styling modifications to Motif (those rounded windows and scrollbars)
