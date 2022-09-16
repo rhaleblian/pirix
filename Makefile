@@ -13,7 +13,6 @@ install:
 
 # Operating system packages.
 
-# Consider not doing this here...
 install-debian-prerequisites:
 	apt install \
 	mwm libmotif-dev motif-clients \

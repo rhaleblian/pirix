@@ -15,11 +15,9 @@ resources.
 
 On Debian distributions, you'll need a few packages first. Run
 
-    sudo apt install \
-    mwm libmotif-dev motif-clients \
-    xosview xfonts-100dpi xfonts-75dpi x11-apps libxi-dev libxm-dev \
-    freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage \
-    imagemagick
+    sudo make install-debian-prerequisites
+
+Look at `Makefile` for specifics on what OS packages are being installed.
 
 As usual, Fedora distributions will use different names for these packages.
 
@@ -38,17 +36,15 @@ with `raspi-config` to drop into a shell. Then run
     startx
 
 We mentioned `.xsession` because some remote desktop mechanisms
-and display manager like `xrdp` will use that file instead.
+and display managers like `xrdp` will use that file instead.
 Salient if you, say, want piRIX to be available from your login screen.
 
 
-## What Gets Installed?
+## What gets installed?
 
 Files will be installed to
 
     $HOME/.config/pirix
-
-Please check that this won't stomp anything you want to keep.
 
 
 ## Removal
