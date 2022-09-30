@@ -1,84 +1,67 @@
-! Colors
-!
-! #aaaaaa - sgilightgray
-! #c5c1aa - sgibrightgray
-! #b88f8d - sgisalmon
-! #c5a5c5 - grape
-! #cc9999 - pale salmon
-! #cc4ddd - electric violet
-
-Mwm*background: #aaaaaa
-Mwm*foreground: gray10
-Mwm*menu*foreground: gray10
-Mwm*activeBackground: #c5c1aa
-
 
 ! Fonts
 !
              *fontList: -adobe-helvetica-bold-o-normal--14-*
         *menu*fontList: -adobe-helvetica-bold-o-normal--14-*
       *menubar*FontSet: -adobe-helvetica-bold-o-normal--14-*
-!    Mwm*menu*fontList: -adobe-helvetica-bold-o-normal--14-*
-!  Mwm*client*fontList: -adobe-helvetica-bold-o-normal--14-*
-!Mwm*feedback*fontList: -adobe-helvetica-bold-r-normal--14-*
-!    Mwm*icon*fontList: -adobe-helvetica-medium-r-normal--14-*
          Xft.antialias: true
 
 
 ! Clients
 !
-Mwm*windowMenu: WindowMenu
-Mwm*useIconBox: false
+        Mwm*windowMenu: WindowMenu
+        Mwm*useIconBox: false
 
-!Mwm*client*backgroundPixmap: /usr/X11/bitmaps/stipple
-Mwm*client*title*activeBackground: #c5c1aa
-Mwm*client*iconImage: HOME/.config/pirix/icons/template.xpm
+   Mwm*client*title*activeBackground: #c5c1aa
+                Mwm*client*iconImage: HOME/.config/pirix/icons/template.xpm
 
-!Mwm*icon*foreground: #ff0000
-!Mwm*icon*foreground: #cc4ddd
-
-Mwm*Emacs*iconImage: HOME/.config/pirix/icons/emacs.xpm
-Mwm*Firefox-esr*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
-Mwm*Mathematica*iconImage: HOME/.config/pirix/icons/mathematica.xpm
-Mwm*Surf*iconImage: HOME/.config/pirix/icons/surf.xpm
-Mwm*URxvt*iconImage: HOME/.config/pirix/icons/winterm.xpm
+                 Mwm*Emacs*iconImage: HOME/.config/pirix/icons/emacs.xpm
+           Mwm*Firefox-esr*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
+           Mwm*Mathematica*iconImage: HOME/.config/pirix/icons/mathematica.xpm
+                  Mwm*Surf*iconImage: HOME/.config/pirix/icons/surf.xpm
+                 Mwm*URxvt*iconImage: HOME/.config/pirix/icons/winterm.xpm
 
 
 ! Appearance and Behaviour
 !
-Mwm*buttonBindings: ButtonBindings
-Mwm*frameBorderWidth: 6
-Mwm*freezeOnConfig: false
-Mwm*iconClick: false
-Mwm*iconDecoration: label image
-Mwm*iconImageMaximum: 85x67
-Mwm*iconPlacement: left top tight
-Mwm*iconPlacementMargin: 10
-Mwm*keyBindings: KeyBindings
-Mwm*keyboardFocusPolicy: explicit
-Mwm*limitResize: true
-Mwm*lowerOnIconify: false
-Mwm*moveThreshold: 3
-Mwm*multiScreen: true
-Mwm*passButtons: true
-Mwm*positionIsFrame: false
-Mwm*positionOnScreen: true
-Mwm*resizeBorderWidth: 6
-Mwm*showFeedback: behavior restart quit
-Mwm*transientFunctions: all -minimize -quit
-Mwm*resizeOpaque: true
-Mwm*moveOpaque: true
+                      Mwm*background: #aaaaaa
+                      Mwm*foreground: gray10
+                 Mwm*menu*foreground: gray10
+                Mwm*activeBackground: #c5c1aa
+
+                  Mwm*buttonBindings: ButtonBindings
+                Mwm*frameBorderWidth: 6
+                  Mwm*freezeOnConfig: false
+                       Mwm*iconClick: false
+                  Mwm*iconDecoration: label image
+                Mwm*iconImageMaximum: 85x67
+                   Mwm*iconPlacement: left top tight
+             Mwm*iconPlacementMargin: 10
+                     Mwm*keyBindings: KeyBindings
+             Mwm*keyboardFocusPolicy: explicit
+                     Mwm*limitResize: true
+                  Mwm*lowerOnIconify: false
+                   Mwm*moveThreshold: 3
+                     Mwm*multiScreen: true
+                     Mwm*passButtons: true
+                 Mwm*positionIsFrame: false
+                Mwm*positionOnScreen: true
+               Mwm*resizeBorderWidth: 6
+                    Mwm*showFeedback: behavior restart quit
+              Mwm*transientFunctions: all -minimize -quit
+                    Mwm*resizeOpaque: true
+                      Mwm*moveOpaque: true
 
 
 ! Strings
 !
-Mwm*confirmQuit*messageString: Exit window manager?
-Mwm*confirmQuit*cancelLabelString: Cancel
-Mwm*confirmQuit*okLabelString: OK
-Mwm*confirmRestart*messageString: Restart window manager?
+       Mwm*confirmQuit*messageString: Exit window manager?
+   Mwm*confirmQuit*cancelLabelString: Cancel
+       Mwm*confirmQuit*okLabelString: OK
+    Mwm*confirmRestart*messageString: Restart window manager?
 Mwm*confirmRestart*cancelLabelString: Cancel
-Mwm*confirmRestart*okLabelString: OK
-Mwm*iconBoxTitle: Windows Overview
+    Mwm*confirmRestart*okLabelString: OK
+                    Mwm*iconBoxTitle: Windows Overview
 
 
 ! Emacs
@@ -96,103 +79,60 @@ Mwm*iconBoxTitle: Windows Overview
 
 ! NEdit
 !
- nedit*text.background: #cc9999
+             nedit*text.background: #cc9999
 
 
 ! gr_osview
 !
-XOsview*title: gr_osview
-XOsview*geometry: 300x400-10-10
-xosview*font: -adobe-helvetica-bold-o-normal--10-*
-xosview*background: gray70
-xosview*foreground: gray10
-xosview*meterLabelColor: gray30
-xosview*usedlabels: False
-xosview*usedLabelColor: gray50
+                     xosview*title: gr_osview
+                  xosview*geometry: 300x400-10-10
+                      xosview*font: -adobe-helvetica-bold-o-normal--10-*
+                xosview*background: gray70
+                xosview*foreground: gray10
+           xosview*meterLabelColor: gray30
+                xosview*usedlabels: False
+            xosview*usedLabelColor: gray50
 ! LOAD
-xosview*load: False
+                      xosview*load: False
 ! CPU
-xosview*cpuDecay: False
-xosview*cpuGraph: False
-xosview*cpuPriority: 10
-xosview*cpuFreeColor: gray50
+                  xosview*cpuDecay: False
+                  xosview*cpuGraph: False
+               xosview*cpuPriority: 10
+              xosview*cpuFreeColor: gray50
 ! MEM
-xosview*memFreeColor: gray50
+              xosview*memFreeColor: gray50
 ! DISK
-xosview*diskIdleColor: gray50
+             xosview*diskIdleColor: gray50
 ! SWAP
-xosview*swapFreeColor: gray50
+             xosview*swapFreeColor: gray50
 ! PAGE
-xosview*pageIdleColor: gray50
+             xosview*pageIdleColor: gray50
 ! NET
-xosview*netBackground: gray50
+             xosview*netBackground: gray50
 ! WLAN
-xosview*wireless: false
+                  xosview*wireless: false
 ! BTRY
-xosview*battery: false
-xosview*btryBackground: gray40
+                   xosview*battery: false
+            xosview*btryBackground: gray40
 
 
 ! winterm
 !
-URxvt*font: -adobe-courier-medium-r-*-*-18-*-*-*-*-*-*-*
-URxvt*boldFont: -adobe-courier-bold-r-*-*-18-*-*-*-*-*-*-*
-!URxvt*geometry: 80x40
-!URxvt*background: #260033
-URxvt*background: #00003f
-URxvt*foreground: gray90
-URxvt*scrollstyle: next
-URxvt*thickness: 14
-URxvt*scrollBar_right: false
-
-!!! modern desaturated
-!*color2:  #336633
-!*color4:  #666699
-!*color7:  #999999
-!*color8:  #666666
-!*color9:  #aa3333
-!*color10: #66cc66
-!*color11: #cccc99
-!*color12: #6666aa
-!*color13: #aa66aa
-!*color14: #66aaaa
-!*color15: #cccccc
-
-!!! themic/traditional
-!*color1:  #f8fc00
-!*color2:  #f8fc00
-!*color3:  #f8fc00
-!*color4:  #f8fc00
-!*color5:  #f8fc00
-!*color6:  #f8fc00
-!*color7:  #f8fc00
-! scrollbar trough
-!*color8:  #f8fc00
-! ?
-!*color9:  #f8fc00
-! prompt (green)
-*color10: #f8fc00
-! ?
-!*color11: #f8fc00
-! directory (blue)
-*color12: #666699
-! ?
-!*color13: #f8fc00
-! symlink (cyan)
-!*color14: #f8fc00
-! ?
-!*color15: #f8fc00
-!!! </sgi-theme>
+            URxvt*font: -adobe-courier-medium-r-*-*-18-*-*-*-*-*-*-*
+        URxvt*boldFont: -adobe-courier-bold-r-*-*-18-*-*-*-*-*-*-*
+      URxvt*background: #00003f
+      URxvt*foreground: gray90
+     URxvt*scrollstyle: next
+       URxvt*thickness: 14
+ URxvt*scrollBar_right: false
 
 
 ! xclock
 !
-XClock*geometry: -16+16
-XClock*background: #cccccc
+       XClock*geometry: -16+16
+     XClock*background: #cccccc
 
 
 ! xconsole
 !
-XConsole*geometry: 800x64+16-16
-
-
+     XConsole*geometry: 800x64+16-16

@@ -1,0 +1,58 @@
+! Colors
+!
+! #aaaaaa - sgilightgray
+! #c5c1aa - sgibrightgray
+! #b88f8d - sgisalmon
+! #c5a5c5 - grape
+! #cc9999 - pale salmon
+! #cc4ddd - electric violet
+
+!!! modern desaturated
+!*color2:  #336633
+!*color4:  #666699
+!*color7:  #999999
+!*color8:  #666666
+!*color9:  #aa3333
+!*color10: #66cc66
+!*color11: #cccc99
+!*color12: #6666aa
+!*color13: #aa66aa
+!*color14: #66aaaa
+!*color15: #cccccc
+
+!!! themic/traditional
+!*color1:  #f8fc00
+!*color2:  #f8fc00
+!*color3:  #f8fc00
+!*color4:  #f8fc00
+!*color5:  #f8fc00
+!*color6:  #f8fc00
+!*color7:  #f8fc00
+! scrollbar trough
+!*color8:  #f8fc00
+! ?
+!*color9:  #f8fc00
+! prompt (green)
+*color10: #f8fc00
+! ?
+!*color11: #f8fc00
+! directory (blue)
+*color12: #666699
+! ?
+!*color13: #f8fc00
+! symlink (cyan)
+!*color14: #f8fc00
+! ?
+!*color15: #f8fc00
+!!! </sgi-theme>
+
+!URxvt*geometry: 80x40
+!URxvt*background: #260033
+
+!    Mwm*menu*fontList: -adobe-helvetica-bold-o-normal--14-*
+!  Mwm*client*fontList: -adobe-helvetica-bold-o-normal--14-*
+!Mwm*feedback*fontList: -adobe-helvetica-bold-r-normal--14-*
+!    Mwm*icon*fontList: -adobe-helvetica-medium-r-normal--14-*
+!Mwm*icon*foreground: #ff0000
+!Mwm*icon*foreground: #cc4ddd
+!Mwm*client*backgroundPixmap: /usr/X11/bitmaps/stipple
