@@ -19,3 +19,8 @@ install-debian-prerequisites:
 	xosview xfonts-100dpi xfonts-75dpi x11-apps \
 	freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage \
 	imagemagick
+	
+demos:
+	make -C src/demo/atlantis
+	make -C src/demo/ideas
+	make -C src/demo/gears
