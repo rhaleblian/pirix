@@ -1,16 +1,16 @@
 
 ! Fonts
 !
-             *fontList: -adobe-helvetica-bold-o-normal--14-*
-        *menu*fontList: -adobe-helvetica-bold-o-normal--14-*
-      *menubar*FontSet: -adobe-helvetica-bold-o-normal--14-*
-         Xft.antialias: true
+                           *fontList: -adobe-helvetica-bold-o-normal--14-*
+                      *menu*fontList: -adobe-helvetica-bold-o-normal--14-*
+                    *menubar*FontSet: -adobe-helvetica-bold-o-normal--14-*
+                       Xft.antialias: true
 
 
 ! Clients
 !
-        Mwm*windowMenu: WindowMenu
-        Mwm*useIconBox: false
+                      Mwm*windowMenu: WindowMenu
+                      Mwm*useIconBox: false
 
    Mwm*client*title*activeBackground: #c5c1aa
                 Mwm*client*iconImage: HOME/.config/pirix/icons/template.xpm
@@ -117,8 +117,8 @@ Mwm*confirmRestart*cancelLabelString: Cancel
 
 ! winterm
 !
-            URxvt*font: -adobe-courier-medium-r-*-*-16-*-*-*-*-*-*-*
-        URxvt*boldFont: -adobe-courier-bold-r-*-*-16-*-*-*-*-*-*-*
+            URxvt*font: -*-lucidatypewriter-medium-*-*-*-14-*-*-*-*-*-*-*
+        URxvt*boldFont: -*-lucidatypewriter-bold-*-*-*-14-*-*-*-*-*-*-*
       URxvt*background: #00003f
       URxvt*foreground: gray90
      URxvt*scrollstyle: next
