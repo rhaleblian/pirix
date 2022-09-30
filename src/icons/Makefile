@@ -3,7 +3,7 @@ prefix := $(HOME)/.config/pirix/icons
 TARGETS = \
 $(prefix)/client.xpm \
 $(prefix)/epiphany-browser.xpm \
-$(prefix)/firefox-esr.xpm \
+$(prefix)/firefox.xpm \
 $(prefix)/gitk.xpm \
 $(prefix)/mathematica.xpm \
 $(prefix)/nedit.xpm \
@@ -21,7 +21,7 @@ $(prefix)/client.xpm: client.png
 $(prefix)/epiphany-browser.xpm: epiphany-browser.png
 	convert $< -resize 128x128 $@
 
-$(prefix)/firefox-esr.xpm: firefox-esr.png
+$(prefix)/firefox.xpm: firefox.png
 	convert $< $@
 
 $(prefix)/gitk.xpm: gitk.png

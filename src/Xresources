@@ -10,11 +10,11 @@
 ! Icons
 !
                       Mwm*useIconBox: false
-                Mwm*client*iconImage: HOME/.config/pirix/icons/template.xpm
+                Mwm*client*iconImage: HOME/.config/pirix/icons/client.xpm
                  Mwm*Emacs*iconImage: HOME/.config/pirix/icons/emacs.xpm
-           Mwm*Firefox-esr*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
-               Mwm*Firefox*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
-           Mwm*Mathematica*iconImage: HOME/.config/pirix/icons/mathematica.xpm
+               Mwm*Firefox*iconImage: HOME/.config/pirix/icons/firefox.xpm
+           Mwm*Firefox-esr*iconImage: HOME/.config/pirix/icons/firefox.xpm
+	   Mwm*Mathematica*iconImage: HOME/.config/pirix/icons/mathematica.xpm
                  Mwm*NEdit*iconImage: HOME/.config/pirix/icons/nedit.xpm
                   Mwm*Surf*iconImage: HOME/.config/pirix/icons/surf.xpm
                  Mwm*URxvt*iconImage: HOME/.config/pirix/icons/winterm.xpm
