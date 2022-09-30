@@ -56,3 +56,4 @@
 !Mwm*icon*foreground: #ff0000
 !Mwm*icon*foreground: #cc4ddd
 !Mwm*client*backgroundPixmap: /usr/X11/bitmaps/stipple
+       Emacs.default.attributeFont: -b&h-lucidatypewriter-medium-*-*-*-14-*

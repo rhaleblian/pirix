@@ -15,11 +15,11 @@
    Mwm*client*title*activeBackground: #c5c1aa
                 Mwm*client*iconImage: HOME/.config/pirix/icons/template.xpm
 
-                 Mwm*Emacs*iconImage: HOME/.config/pirix/icons/emacs.xpm
-           Mwm*Firefox-esr*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
-           Mwm*Mathematica*iconImage: HOME/.config/pirix/icons/mathematica.xpm
-                  Mwm*Surf*iconImage: HOME/.config/pirix/icons/surf.xpm
-                 Mwm*URxvt*iconImage: HOME/.config/pirix/icons/winterm.xpm
+                 Mwm*Emacs*iconImage: HOME/.config/pirix/bitmaps/emacs.xpm
+           Mwm*Firefox-esr*iconImage: HOME/.config/pirix/bitmaps/firefox-esr.xpm
+           Mwm*Mathematica*iconImage: HOME/.config/pirix/bitmaps/mathematica.xpm
+                  Mwm*Surf*iconImage: HOME/.config/pirix/bitmaps/surf.xpm
+                 Mwm*URxvt*iconImage: HOME.config/pirix/bitmaps/winterm.xpm
 
 
 ! Appearance and Behaviour
@@ -72,7 +72,6 @@ Mwm*confirmRestart*cancelLabelString: Cancel
 ! Emacs-lucid resources also work but names vary...
 !
  Emacs.default.attributeBackground: #bbaaaa
-       Emacs.default.attributeFont: -b&h-lucidatypewriter-medium-*-*-*-14-*
      Emacs.pane.menubar.*.fontList: -adobe-helvetica-bold-o-normal--14-*
            Emacs.pane.menubar.font: -adobe-helvetica-bold-o-normal--14-*
 
