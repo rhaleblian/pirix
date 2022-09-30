@@ -1,9 +1,3 @@
-
-instructions:
-	@echo "Examine the 'install' rule in this Makefile first."
-	@echo "If it is not destructive, run 'make install'."
-	@echo Then see README.md for the remaining steps.
-
 install: install-rc install-icons
 	install -d $(HOME)/.config/pirix/wallpaper
 	install -m 644 wallpaper/desktop*.jpg $(HOME)/.config/pirix/wallpaper

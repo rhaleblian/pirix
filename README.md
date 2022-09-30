@@ -46,6 +46,9 @@ Files will be installed to
 
     $HOME/.config/pirix
 
+NOTE! Any changes you may have made to files already here will be
+overwritten!
+
 
 ## Removal
 
@@ -68,9 +71,11 @@ If you want the atlantis demo,
     cd src/demo/atlantis
     make install
 
+The executable will in be that directory.
 Follow the same pattern for any of the other demos.
 The Toolchest (well, the thing that must serve for it)
-has menu items to launch them.
+has menu items to launch them, provided you put the executable
+in your search path.
 
 
 ## Does this hackamadoodle only work on the Pi?
