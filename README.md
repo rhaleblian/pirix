@@ -3,7 +3,7 @@
 piRIX is an emulation of SGI's IRIX Interactive Desktop on Raspberry Pi 3/4
 (and some other platforms).
 
-![screenshot](etc/screenshot3.png)
+![screenshot](etc/screenshot5.png)
 ![screenshot](etc/screenshot4.png)
 
 Besides being nostalgic, this desktop environment is fast and easy on Pi 
