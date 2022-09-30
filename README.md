@@ -50,7 +50,7 @@ NOTE! Any changes you may have made to files already here will be
 overwritten!
 
 
-## Removal
+## How do I uninstall this?
 
     rm -r $HOME/.config/pirix
 
