@@ -7,29 +7,25 @@
                        Xft.antialias: true
 
 
-! Clients
+! Icons
 !
-                      Mwm*windowMenu: WindowMenu
                       Mwm*useIconBox: false
-
-   Mwm*client*title*activeBackground: #c5c1aa
                 Mwm*client*iconImage: HOME/.config/pirix/icons/template.xpm
-
                  Mwm*Emacs*iconImage: HOME/.config/pirix/icons/emacs.xpm
            Mwm*Firefox-esr*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
                Mwm*Firefox*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
            Mwm*Mathematica*iconImage: HOME/.config/pirix/icons/mathematica.xpm
+                 Mwm*NEdit*iconImage: HOME/.config/pirix/icons/nedit.xpm
                   Mwm*Surf*iconImage: HOME/.config/pirix/icons/surf.xpm
                  Mwm*URxvt*iconImage: HOME/.config/pirix/icons/winterm.xpm
 
 
 ! Appearance and Behaviour
 !
-                      Mwm*background: #aaaaaa
-                      Mwm*foreground: gray10
-                 Mwm*menu*foreground: gray10
                 Mwm*activeBackground: #c5c1aa
-
+                Mwm*activeForeground: gray10
+                      Mwm*background: gray50
+                      Mwm*foreground: gray10
                   Mwm*buttonBindings: ButtonBindings
                 Mwm*frameBorderWidth: 6
                   Mwm*freezeOnConfig: false
@@ -52,6 +48,7 @@
               Mwm*transientFunctions: all -minimize -quit
                     Mwm*resizeOpaque: true
                       Mwm*moveOpaque: true
+                      Mwm*windowMenu: WindowMenu
 
 
 ! Strings
@@ -86,8 +83,8 @@ Mwm*confirmRestart*cancelLabelString: Cancel
                      xosview*title: gr_osview
                   xosview*geometry: 300x400-10-10
                       xosview*font: -adobe-helvetica-bold-o-normal--10-*
-                xosview*background: gray70
-                xosview*foreground: gray10
+!                xosview*background: gray70
+!                xosview*foreground: gray10
            xosview*meterLabelColor: gray30
                 xosview*usedlabels: False
             xosview*usedLabelColor: gray50
