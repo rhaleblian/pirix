@@ -8,4 +8,3 @@ function pirix
     urxvt -geometry 80x40 &
     mwm -xrm "mwm*configFile: $HOME/.config/pirix/mwmrc"
 }
-
