@@ -42,9 +42,8 @@ $(prefix)/winterm.xpm: winterm.png
 install: $(HOME)/.config/pirix/icons $(TARGETS)
 
 
-$(HOME)/.config/pirix/icons:
-	install -d $(HOME)/.config/pirix/icons
+$(prefix):
+	install -d $(prefix)
 
 clean:
 	- rm *.xpm
-
