@@ -1,0 +1,12 @@
+1.2.0
+
+Codename: "Ch-ch-ch-ch-changes"
+
+* fixes potential issues with icon paths
+* replaces Courier with Lucida in terminals
+* replaces `firefox-esr` with `firefox` in menus
+* reformats resource files so they might even be readable
+
+IMPORTANT: if you use `make install`, any changes in `$HOME/.config/pirix`
+are OVERWRITTEN, so you will lose any tweaks you have made in there.
+If you want to keep your edits, bring changes in by hand.
