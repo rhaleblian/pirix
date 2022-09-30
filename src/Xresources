@@ -9,6 +9,11 @@
 
 ! Icons
 !
+                       Mwm*iconClick: false
+                  Mwm*iconDecoration: label image
+                Mwm*iconImageMaximum: 85x67
+                   Mwm*iconPlacement: left top tight
+             Mwm*iconPlacementMargin: 8
                       Mwm*useIconBox: false
                 Mwm*client*iconImage: HOME/.config/pirix/icons/client.xpm
                  Mwm*Emacs*iconImage: HOME/.config/pirix/icons/emacs.xpm
@@ -25,29 +30,25 @@
                 Mwm*activeBackground: #c5c1aa
                 Mwm*activeForeground: gray10
                       Mwm*background: gray50
-                      Mwm*foreground: gray10
-                  Mwm*buttonBindings: ButtonBindings
+                      Mwm*foreground: gray10		      
                 Mwm*frameBorderWidth: 6
-                  Mwm*freezeOnConfig: false
-                       Mwm*iconClick: false
-                  Mwm*iconDecoration: label image
-                Mwm*iconImageMaximum: 85x67
-                   Mwm*iconPlacement: left top tight
-             Mwm*iconPlacementMargin: 10
+               Mwm*resizeBorderWidth: 6
+
+                  Mwm*buttonBindings: ButtonBindings
+                  Mwm*freezeOnConfig: False
                      Mwm*keyBindings: KeyBindings
              Mwm*keyboardFocusPolicy: explicit
-                     Mwm*limitResize: true
-                  Mwm*lowerOnIconify: false
+                     Mwm*limitResize: True
+                  Mwm*lowerOnIconify: False
+                      Mwm*moveOpaque: True
                    Mwm*moveThreshold: 3
-                     Mwm*multiScreen: true
-                     Mwm*passButtons: true
-                 Mwm*positionIsFrame: false
-                Mwm*positionOnScreen: true
-               Mwm*resizeBorderWidth: 6
+                     Mwm*multiScreen: True
+                     Mwm*passButtons: True
+                 Mwm*positionIsFrame: False
+                Mwm*positionOnScreen: True
+                    Mwm*resizeOpaque: True
                     Mwm*showFeedback: behavior restart quit
               Mwm*transientFunctions: all -minimize -quit
-                    Mwm*resizeOpaque: true
-                      Mwm*moveOpaque: true
                       Mwm*windowMenu: WindowMenu
 
 
@@ -81,35 +82,88 @@ Mwm*confirmRestart*cancelLabelString: Cancel
 ! gr_osview
 !
                      xosview*title: gr_osview
-                  xosview*geometry: 300x400-10-10
+                  xosview*geometry: 300x280-10-10
                       xosview*font: -adobe-helvetica-bold-o-normal--10-*
-!                xosview*background: gray70
-!                xosview*foreground: gray10
-           xosview*meterLabelColor: gray30
+                xosview*background: gray50
+                xosview*foreground: gray10
+           xosview*meterLabelColor: gray10
                 xosview*usedlabels: False
-            xosview*usedLabelColor: gray50
+            xosview*usedLabelColor: gray10
 ! LOAD
                       xosview*load: False
 ! CPU
+!                 xosview*cpuFields: usr sys wio idle
                   xosview*cpuDecay: False
+                 xosview*cpuFormat: single   ! single, all, auto or both
+              xosview*cpuFreeColor: green
                   xosview*cpuGraph: False
+         xosview*cpuInterruptColor: red
+        xosview*cpuSInterruptColor: red red
+	      xosview*cpuNiceColor: yellow
                xosview*cpuPriority: 10
-              xosview*cpuFreeColor: gray50
+            xosview*cpuSystemColor: red
+              xosview*cpuUserColor: blue
+              xosview*cpuWaitColor: red
 ! MEM
-              xosview*memFreeColor: gray50
+                       xosview*mem: True
+            xosview*memKernelColor: red
+              xosview*memUsedColor: blue
+            xosview*memSharedColor: yellow
+            xosview*memBufferColor: cyan
+              xosview*memSlabColor: blue
+             xosview*memCacheColor: magenta
+              xosview*memFreeColor: green
+              xosview*memTextColor: gray10
+             xosview*memOtherColor: orange
+            xosview*memActiveColor: blue
+          xosview*memInactiveColor: purple
+             xosview*memWiredColor: magenta
+              xosview*memUsedColor: blue
 ! DISK
-             xosview*diskIdleColor: gray50
+xosview*disk:		    True
+xosview*diskUsedColor:	    blue
+xosview*diskIdleColor:	    green
+xosview*diskWriteColor:     red
+xosview*diskReadColor:      blue
+xosview*diskBandwidth:      100000000 ! 100MB/s
+xosview*diskPriority:	    10
+xosview*diskDecay:	    True
+xosview*diskUsedFormat:     autoscale
+xosview*diskGraph:	    False
 ! SWAP
-             xosview*swapFreeColor: gray50
+                      xosview*swap: True
+             xosview*swapUsedColor: blue
+             xosview*swapFreeColor: green
+              xosview*swapPriority: 10
+                 xosview*swapDecay: False
+                 xosview*swapGraph: False
+            xosview*swapUsedFormat: autoscale
 ! PAGE
-             xosview*pageIdleColor: gray50
+xosview*page:               True
+xosview*pageBandwidth:      120
+xosview*pageInColor:        blue
+xosview*pageOutColor:       red
+xosview*pageIdleColor:      green
+xosview*pagePriority:       5
+xosview*pageDecay:          False
+xosview*pageGraph:          False
+xosview*pageUsedFormat:     autoscale
 ! NET
-             xosview*netBackground: gray50
+xosview*net:		    True
+xosview*netBandwidth:       10000000  ! for 100Mbit/s
+xosview*netInColor:         blue
+xosview*netOutColor:        red
+xosview*netBackground:      green
+xosview*netPriority:        2
+xosview*netDecay:           True
+xosview*netGraph:           False
+xosview*netUsedFormat:	    autoscale
+xosview*netIface:           False
 ! WLAN
-                  xosview*wireless: false
+                  xosview*wireless: False
 ! BTRY
-                   xosview*battery: false
-            xosview*btryBackground: gray40
+                   xosview*battery: False
+            xosview*btryBackground: green
 
 
 ! winterm
