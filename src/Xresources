@@ -19,7 +19,7 @@
            Mwm*Firefox-esr*iconImage: HOME/.config/pirix/bitmaps/firefox-esr.xpm
            Mwm*Mathematica*iconImage: HOME/.config/pirix/bitmaps/mathematica.xpm
                   Mwm*Surf*iconImage: HOME/.config/pirix/bitmaps/surf.xpm
-                 Mwm*URxvt*iconImage: HOME.config/pirix/bitmaps/winterm.xpm
+                 Mwm*URxvt*iconImage: HOME/.config/pirix/bitmaps/winterm.xpm
 
 
 ! Appearance and Behaviour
@@ -116,8 +116,8 @@ Mwm*confirmRestart*cancelLabelString: Cancel
 
 ! winterm
 !
-            URxvt*font: -adobe-courier-medium-r-*-*-18-*-*-*-*-*-*-*
-        URxvt*boldFont: -adobe-courier-bold-r-*-*-18-*-*-*-*-*-*-*
+            URxvt*font: -adobe-courier-medium-r-*-*-16-*-*-*-*-*-*-*
+        URxvt*boldFont: -adobe-courier-bold-r-*-*-16-*-*-*-*-*-*-*
       URxvt*background: #00003f
       URxvt*foreground: gray90
      URxvt*scrollstyle: next

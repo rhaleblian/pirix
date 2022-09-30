@@ -55,7 +55,7 @@ Menu RootMenu
   "Refresh All"  _f  f.refresh
 
   no-label           f.separator
-  "Reload"           f.exec "xrdb ~/.config/pirix/Xresources &"
+  "Reload"           f.exec "xrdb -DHOME=$HOME $HOME/.config/pirix/Xresources &"
   "Restart..."   _R  f.restart
   "Exit..."      _x  f.quit_mwm
 }
@@ -63,7 +63,7 @@ Menu RootMenu
 Menu Applications
 { 
   "NEdit"            f.exec "nedit &"
-  "Emacs"           f.exec "emacs &"
+  "Emacs"            f.exec "emacs &"
   !"XEmacs"           f.exec "xemacs &"
 }
 
@@ -77,7 +77,7 @@ Menu Demos
 
 Menu Internet
 { 
-  "Firefox"          f.exec "firefox-esr &"
+  "Firefox"          f.exec "firefox &"
   !"Netsurf"          f.exec "netsurf &"
 }
 
