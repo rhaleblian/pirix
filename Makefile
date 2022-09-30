@@ -19,7 +19,14 @@ install-debian-prerequisites:
 	xosview xfonts-100dpi xfonts-75dpi x11-apps \
 	freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage \
 	imagemagick
-	
+
+install-wsl-prerequisites:
+	apt install \
+	mwm libmotif-dev motif-clients \
+	xosview xfonts-100dpi xfonts-75dpi x11-apps \
+	freeglut3-dev rxvt-unicode nedit xloadimage \
+	imagemagick
+
 demos:
 	make -C src/demo/atlantis
 	make -C src/demo/ideas
