@@ -1,3 +1,17 @@
+
+!URxvt*geometry: 80x40
+!URxvt*background: #260033
+
+!    Mwm*menu*fontList: -adobe-helvetica-bold-o-normal--14-*
+!  Mwm*client*fontList: -adobe-helvetica-bold-o-normal--14-*
+!Mwm*feedback*fontList: -adobe-helvetica-bold-r-normal--14-*
+!    Mwm*icon*fontList: -adobe-helvetica-medium-r-normal--14-*
+!Mwm*icon*foreground: #ff0000
+!Mwm*icon*foreground: #cc4ddd
+!Mwm*client*backgroundPixmap: /usr/X11/bitmaps/stipple
+       Emacs.default.attributeFont: -b&h-lucidatypewriter-medium-*-*-*-14-*
+ Emacs.default.attributeBackground: #bbaaaa
+
 ! Colors
 !
 ! #aaaaaa - sgilightgray
@@ -45,15 +59,3 @@
 ! ?
 !*color15: #f8fc00
 !!! </sgi-theme>
-
-!URxvt*geometry: 80x40
-!URxvt*background: #260033
-
-!    Mwm*menu*fontList: -adobe-helvetica-bold-o-normal--14-*
-!  Mwm*client*fontList: -adobe-helvetica-bold-o-normal--14-*
-!Mwm*feedback*fontList: -adobe-helvetica-bold-r-normal--14-*
-!    Mwm*icon*fontList: -adobe-helvetica-medium-r-normal--14-*
-!Mwm*icon*foreground: #ff0000
-!Mwm*icon*foreground: #cc4ddd
-!Mwm*client*backgroundPixmap: /usr/X11/bitmaps/stipple
-       Emacs.default.attributeFont: -b&h-lucidatypewriter-medium-*-*-*-14-*

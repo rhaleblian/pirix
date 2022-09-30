@@ -71,7 +71,6 @@ Mwm*confirmRestart*cancelLabelString: Cancel
 ! Xemacs honours X resources.
 ! Emacs-lucid resources also work but names vary...
 !
- Emacs.default.attributeBackground: #bbaaaa
      Emacs.pane.menubar.*.fontList: -adobe-helvetica-bold-o-normal--14-*
            Emacs.pane.menubar.font: -adobe-helvetica-bold-o-normal--14-*
 
