@@ -63,7 +63,8 @@ Menu RootMenu
 Menu Applications
 { 
   "NEdit"            f.exec "nedit &"
-  "XEmacs"           f.exec "xemacs &"
+  "Emacs"           f.exec "emacs &"
+  !"XEmacs"           f.exec "xemacs &"
 }
 
 Menu Demos
@@ -77,6 +78,7 @@ Menu Demos
 Menu Internet
 { 
   "Firefox"          f.exec "firefox-esr &"
+  !"Netsurf"          f.exec "netsurf &"
 }
 
 Menu Shell
