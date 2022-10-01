@@ -3,7 +3,7 @@ function pirix
 {
     xrdb -load -DHOME=$HOME $HOME/.config/pirix/Xresources
     !xsetroot -solid 'Steel Blue'
-    xsetbg $HOME/.config/pirix/wallpaper/4c719e.png
+    xsetbg $HOME/.config/pirix/wallpaper/4c719e.jpg
     xclock &
     xosview &
     urxvt -geometry 80x40 &
