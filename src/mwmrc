@@ -62,8 +62,10 @@ Menu RootMenu
 
 Menu Applications
 { 
-  "NEdit"            f.exec "nedit &"
   "Emacs"            f.exec "emacs &"
+  "NEdit"            f.exec "nedit &"
+  !"Geany"            f.exec "geany &"
+  !"Mathematica"      f.exec "mathematica &"
   !"XEmacs"           f.exec "xemacs &"
 }
 
