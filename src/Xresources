@@ -84,7 +84,7 @@ Mwm*confirmRestart*cancelLabelString: Cancel
 ! gr_osview
 !
                      xosview*title: gr_osview
-                  xosview*geometry: 300x280-10-10
+                  xosview*geometry: 300x280+14-14
                       xosview*font: -adobe-helvetica-bold-o-normal--10-*
                 xosview*background: gray50
                 xosview*foreground: gray10
@@ -100,7 +100,7 @@ Mwm*confirmRestart*cancelLabelString: Cancel
               xosview*cpuFreeColor: green
                   xosview*cpuGraph: False
          xosview*cpuInterruptColor: red
-        xosview*cpuSInterruptColor: red red
+        xosview*cpuSInterruptColor: red
 	      xosview*cpuNiceColor: yellow
                xosview*cpuPriority: 10
             xosview*cpuSystemColor: red
