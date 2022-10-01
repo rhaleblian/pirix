@@ -51,6 +51,8 @@
               Mwm*transientFunctions: all -minimize -quit
                       Mwm*windowMenu: WindowMenu
 
+         Mwm*XClock.clientDecoration: border
+
 
 ! Strings
 !
@@ -179,10 +181,10 @@ xosview*netIface:           False
 
 ! xclock
 !
-       XClock*geometry: -16+16
+       XClock*geometry: 128x128-8+11
      XClock*background: #cccccc
 
 
 ! xconsole
 !
-     XConsole*geometry: 800x64+16-16
+     XConsole*geometry: 800x64+8-8
