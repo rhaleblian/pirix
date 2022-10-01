@@ -27,11 +27,11 @@ Keys KeyBindings
   Alt<Key>Escape root|icon|window            f.circle_down
   Alt Shift<Key>Escape root|icon|window      f.circle_up
   Alt Shift Ctrl<Key>exclam root|icon|window f.set_behavior
-  Alt<Key>F6 window f.next_key transient
+  Alt<Key>F6 window                          f.next_key transient
   Alt Shift<Key>F6 window                    f.prev_key transient
   Shift<Key>F10 icon                         f.post_wmenu
   Alt Shift<Key>Delete root|icon|window      f.restart
-
+  
   Shift<Key>Escape root                      f.menu LongRootMenu
   Alt<Key>space root                         f.menu LongRootMenu
 }
@@ -64,15 +64,15 @@ Menu Applications
 { 
   "Emacs"            f.exec "emacs &"
   "NEdit"            f.exec "nedit &"
-  !"Geany"            f.exec "geany &"
-  !"Mathematica"      f.exec "mathematica &"
+!  "Geany"            f.exec "geany &"
+!  "Mathematica"      f.exec "mathematica &"
   !"XEmacs"           f.exec "xemacs &"
 }
 
 Menu Demos
 { 
   "Atlantis"         f.exec "~/.config/pirix/demos/atlantis &"
-  "Gears"	     f.exec "~/.config/pirix/demos/gears &"
+  "Gears"            f.exec "~/.config/pirix/demos/gears &"
   "Ideas in Motion"  f.exec "~/.config/pirix/demos/ideas &"
   "Mech"             f.exec "~/.config/pirix/demos/glutmech &"
 }
@@ -80,7 +80,7 @@ Menu Demos
 Menu Internet
 { 
   "Firefox"          f.exec "firefox &"
-  !"Netsurf"          f.exec "netsurf &"
+!  "Netsurf"          f.exec "netsurf &"
 }
 
 Menu Shell
@@ -90,11 +90,11 @@ Menu Shell
 
 Menu System
 {
-  "Clock"      		f.exec "xclock &"
-  "Console"    		f.exec "sudo xconsole &"
-  "Files"		f.exec "pcmanfm &"
-  "Manual"		f.exec "xman &"
-  "Monitor"		f.exec "xosview &"
+  "Clock"            f.exec "xclock &"
+  "Console"          f.exec "sudo xconsole &"
+  "Files"            f.exec "pcmanfm &"
+  "Manual"           f.exec "xman &"
+  "Monitor"          f.exec "xosview &"
 }
 
 Menu Selected dynamic
