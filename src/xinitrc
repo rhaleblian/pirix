@@ -1,4 +1,2 @@
-
-    . $HOME/.config/pirix/pirixrc
-    pirix
-
+. $HOME/.config/pirix/pirixrc
+pirix
