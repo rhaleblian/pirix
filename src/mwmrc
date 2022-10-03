@@ -62,11 +62,11 @@ Menu RootMenu
 
 Menu Applications
 { 
-  "Emacs"            f.exec "emacs &"
+!  "Emacs"            f.exec "emacs &"
   "NEdit"            f.exec "nedit &"
-!  "Geany"            f.exec "geany &"
-!  "Mathematica"      f.exec "mathematica &"
-  !"XEmacs"           f.exec "xemacs &"
+  "Geany"            f.exec "geany &"
+  "Mathematica"      f.exec "mathematica &"
+!  "XEmacs"           f.exec "xemacs &"
 }
 
 Menu Demos
