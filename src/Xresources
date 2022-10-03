@@ -15,7 +15,6 @@
                    Mwm*iconPlacement: left top tight
              Mwm*iconPlacementMargin: 8
                       Mwm*useIconBox: false
-                Mwm*client*iconImage: HOME/.config/pirix/icons/client.xpm
                  Mwm*Emacs*iconImage: HOME/.config/pirix/icons/emacs.xpm
                Mwm*Firefox*iconImage: HOME/.config/pirix/icons/firefox.xpm
            Mwm*Firefox-esr*iconImage: HOME/.config/pirix/icons/firefox.xpm
@@ -23,6 +22,8 @@
                  Mwm*NEdit*iconImage: HOME/.config/pirix/icons/nedit.xpm
                   Mwm*Surf*iconImage: HOME/.config/pirix/icons/surf.xpm
                  Mwm*URxvt*iconImage: HOME/.config/pirix/icons/winterm.xpm
+               Mwm*xosview*iconImage: HOME/.config/pirix/icons/gr_osview.xpm
+       Mwm*WolframFrontEnd*iconImage: HOME/.config/pirix/icons/mathematica.xpm
 
 
 ! Appearance and Behaviour
@@ -181,7 +182,7 @@ xosview*netIface:           False
 
 ! xclock
 !
-       XClock*geometry: 128x128-8+11
+       XClock*geometry: 100x100-8+11
      XClock*background: #cccccc
 
 
