@@ -171,14 +171,16 @@ xosview*netIface:           False
 
 ! winterm
 !
-            URxvt*font: -*-lucidatypewriter-medium-*-*-*-14-*-*-*-*-*-*-*
-        URxvt*boldFont: -*-lucidatypewriter-bold-*-*-*-14-*-*-*-*-*-*-*
-      URxvt*background: #00003f
-      URxvt*foreground: gray90
+            URxvt*font: -*-lucidatypewriter-medium-*-*-*-15-*-*-*-*-*-*-*
+        URxvt*boldFont: -*-lucidatypewriter-bold-*-*-*-15-*-*-*-*-*-*-*
+      URxvt*background: #272727
+      URxvt*foreground: #bbbbbb
      URxvt*scrollstyle: next
        URxvt*thickness: 14
  URxvt*scrollBar_right: false
-
+          URxvt*color8: #666666
+	 URxvt*color10: #66aa66
+	 URxvt*color12: #6666aa
 
 ! xclock
 !
@@ -189,3 +191,6 @@ xosview*netIface:           False
 ! xconsole
 !
      XConsole*geometry: 800x64+8-8
+     
+     Xman*background: #eeeeee
+     Xman*foreground: #111111
