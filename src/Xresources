@@ -174,7 +174,7 @@ xosview*netIface:           False
             URxvt*font: -*-lucidatypewriter-medium-*-*-*-15-*-*-*-*-*-*-*
         URxvt*boldFont: -*-lucidatypewriter-bold-*-*-*-15-*-*-*-*-*-*-*
       URxvt*background: #272727
-      URxvt*foreground: #bbbbbb
+      URxvt*foreground: #cccccc
      URxvt*scrollstyle: next
        URxvt*thickness: 14
  URxvt*scrollBar_right: false
