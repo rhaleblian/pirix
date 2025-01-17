@@ -59,7 +59,7 @@ and undo anything you did to `$HOME/.xinitrc`.
 
 ## Where is the Toolchest?
 
-There ain't none.
+There ain't none (but see #2).
 Find a compromise by pressing your left mouse button
 over the desktop root window.
 
