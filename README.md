@@ -3,6 +3,13 @@
 piRIX is an emulation of SGI's IRIX Interactive Desktop on Raspberry Pi 3/4
 (and some other platforms).
 
+## Advisory: Oops, Wayland!
+
+This hackamadoodle uses `mwm` which uses `X11` which is disappearing
+on the Pi and platforms moving to Wayland.
+We'll see `piRIX` progressively stop working.
+Somebody could port `mwm` to Wayland (cue: everybody laugh).
+
 ![screenshot](etc/screenshot2.png)
 ![screenshot](etc/screenshot1.png)
 ![screenshot](etc/screenshot0.png)
