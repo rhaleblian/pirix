@@ -71,10 +71,10 @@ Menu Applications
 
 Menu Demos
 { 
-  "Atlantis"         f.exec "~/.config/pirix/demos/atlantis &"
-  "Gears"            f.exec "~/.config/pirix/demos/gears &"
-  "Ideas in Motion"  f.exec "~/.config/pirix/demos/ideas &"
-  "Mech"             f.exec "~/.config/pirix/demos/glutmech &"
+  "Atlantis"         f.exec "~/.config/pirix/bin/atlantis &"
+  "Gears"            f.exec "~/.config/pirix/bin/gears &"
+  "Ideas in Motion"  f.exec "~/.config/pirix/bin/ideas &"
+  "Mech"             f.exec "~/.config/pirix/bin/glutmech &"
 }
 
 Menu Internet

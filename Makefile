@@ -32,3 +32,10 @@ demos:
 	make -C src/demo/ideas
 	make -C src/demo/gears
 	make -C src/demo/glutmech
+
+install-demos: demos
+	mkdir -p ~/.config/pirix/bin
+	cp src/demo/atlantis/atlantis ~/.config/pirix/bin
+	cp src/demo/ideas/ideas ~/.config/pirix/bin
+	cp src/demo/gears/gears ~/.config/pirix/bin
+	cp src/demo/glutmech/glutmech ~/.config/pirix/bin
