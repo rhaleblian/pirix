@@ -79,7 +79,7 @@ Menu Demos
 
 Menu Internet
 { 
-  "Chromium"         f.exec "chromium-browser &"
+!  "Chromium"         f.exec "chromium-browser &"
   "Firefox"          f.exec "firefox &"
 !  "Google Chrome"    f.exec "chrome &"
 !  "Netsurf"          f.exec "netsurf &"
