@@ -31,3 +31,4 @@ demos:
 	make -C src/demo/atlantis
 	make -C src/demo/ideas
 	make -C src/demo/gears
+	make -C src/demo/glutmech
