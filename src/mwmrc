@@ -62,11 +62,12 @@ Menu RootMenu
 
 Menu Applications
 { 
-!  "Emacs"            f.exec "emacs &"
+  "Blender"          f.exec "blender &"
+  "Emacs"            f.exec "emacs &"
   "NEdit"            f.exec "nedit &"
   "Geany"            f.exec "geany &"
   "Mathematica"      f.exec "mathematica &"
-!  "XEmacs"           f.exec "xemacs &"
+  "XEmacs"           f.exec "xemacs &"
 }
 
 Menu Demos
@@ -79,10 +80,10 @@ Menu Demos
 
 Menu Internet
 { 
-!  "Chromium"         f.exec "chromium-browser &"
+  "Chromium"         f.exec "chromium-browser &"
   "Firefox"          f.exec "firefox &"
-!  "Google Chrome"    f.exec "chrome &"
-!  "Netsurf"          f.exec "netsurf &"
+  "Google Chrome"    f.exec "chrome &"
+  "Netsurf"          f.exec "netsurf &"
 }
 
 Menu Shell
