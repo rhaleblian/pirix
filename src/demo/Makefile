@@ -1,7 +1,15 @@
-all: atlantis/atlantis gears/gears glutmech/glutmech ideas/ideas
+DSTDIR := $(HOME)/.config/pirix/demos
+
+
+install: atlantis/atlantis gears/gears glutmech/glutmech ideas/ideas
+	- mkdir $(DSTDIR)
+	cp $? $(DSTDIR)
 
 prep-debian:
-	sudo apt install libxi-dev libxm-dev
+	sudo apt install libxi-dev libxm4
+	@echo
+	@echo Now run make install.
+	@echo
 
 atlantis/atlantis:
 	make -C atlantis
@@ -14,6 +22,4 @@ glutmech/glutmech:
 
 ideas/ideas:
 	make -C ideas
-
-/usr/lib/aarch64-linux-gnu/pkgconfig/xmu.pc: prep-debian
 
