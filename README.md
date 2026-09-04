@@ -3,13 +3,6 @@
 piRIX is an emulation of SGI's IRIX Interactive Desktop on Raspberry Pi 3/4
 (and some other platforms).
 
-## Advisory: Oops, Wayland!
-
-This hackamadoodle uses `mwm` which uses `X11` which is disappearing
-on the Pi and platforms moving to Wayland.
-We'll see `piRIX` progressively stop working.
-Somebody could port `mwm` to Wayland (cue: everybody laugh).
-
 ![screenshot](etc/screenshot2.png)
 ![screenshot](etc/screenshot1.png)
 ![screenshot](etc/screenshot0.png)
@@ -20,11 +13,12 @@ resources.
 
 ## Installation
 
-On Debian distributions, you'll need a few packages first. Run
+On Debian distributions, you'll need a few packages first.
 
-    sudo make install-debian-prerequisites
-
-Look at `Makefile` for specifics on what OS packages are being installed.
+	sudo apt install \
+	mwm libmotif-dev mwm \
+	xosview xfonts-100dpi xfonts-75dpi x11-apps \
+	rxvt-unicode imagemagick
 
 As usual, Fedora distributions will use different names for these packages.
 
@@ -32,7 +26,8 @@ Then install:
 
     make install
 
-Put this in your `$HOME/.xinitrc` or `$HOME/.xsession` file:
+Put this in your `$HOME/.xsession`
+or `$HOME/.xinitrc` (if you do not use a login greeter):
 
     . $HOME/.config/pirix/pirixrc
     pirix
@@ -46,6 +41,8 @@ We mentioned `.xsession` because some remote desktop mechanisms
 and display managers like `xrdp` will use that file instead.
 Salient if you, say, want piRIX to be available from your login screen.
 
+And if you know what way you want to start up your desktop, then do that.
+
 
 ## What gets installed?
 
@@ -53,8 +50,9 @@ Files will be installed to
 
     $HOME/.config/pirix
 
-NOTE! Any changes you may have made to files already here will be
-overwritten!
+NOTE!
+Any changes you may have made to files already here
+will be overwritten!
 
 
 ## How do I uninstall this?
@@ -73,9 +71,9 @@ over the desktop root window.
 
 ## Goodies
 
-If you want the atlantis demo,
+If you want the demos,
 
-    cd src/demo/atlantis
+    cd src/demo
     make install
 
 The executable will in be that directory.
