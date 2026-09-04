@@ -1,4 +1,9 @@
+export XENVIRONMENT=/opt/pirix/Xresources
+xsetroot -solid gray30
 
-    . $HOME/.config/pirix/pirixrc
-    pirix
+# Fusion clipboard
+vmtoolsd -n vmusr &
+
+#mwm -xrm "Mwm*configFile: /opt/pirix/mwmrc"
+$HOME/Developer/emwm/src/emwm -xrm "Emwm*configFile: /opt/pirix/emwmrc"
 

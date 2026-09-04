@@ -12,3 +12,5 @@
 *.code-workspace
 *.o
 *.zip
+#*
+

@@ -1,4 +1,4 @@
-DSTDIR := $(HOME)/.config/pirix/demos
+DSTDIR := /opt/pirix/demos
 
 
 install: atlantis/atlantis gears/gears glutmech/glutmech ideas/ideas

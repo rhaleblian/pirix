@@ -1,7 +1,7 @@
 Buttons ButtonBindings
 {
   <Btn1Down> root             f.menu Selected
-  !<Btn1Down> window          f.raise
+  <Btn1Down> window           f.raise
   <Btn1Click> frame           f.raise
   <Btn1Click> icon            f.restore
   Ctrl<Btn1Down> frame|icon   f.lower
@@ -32,8 +32,8 @@ Keys KeyBindings
   Shift<Key>F10 icon                         f.post_wmenu
   Alt Shift<Key>Delete root|icon|window      f.restart
 
-  Shift<Key>Escape root                      f.menu LongRootMenu
-  Alt<Key>space root                         f.menu LongRootMenu
+  Shift<Key>Escape root                      f.menu RootMenu
+  Alt<Key>space root                         f.menu RootMenu
 }
 
 Menu ShortRootMenu
@@ -45,7 +45,7 @@ Menu ShortRootMenu
 Menu RootMenu
 {
   "Desktop" f.title
-  "New Window"   _N  f.exec "urxvt -geometry 80x40 &"
+  "New Window"   _N  f.exec "x-terminal-emulator &"
   "Shuffle Up"   _U  f.circle_up
   "Shuffle Down" _D  f.circle_down
   "Tidy Icons"   _T  f.pack_icons
@@ -55,7 +55,7 @@ Menu RootMenu
   "Refresh All"  _f  f.refresh
 
   no-label           f.separator
-  "Reload"           f.exec "xrdb -DHOME=$HOME $HOME/.config/pirix/Xresources &"
+  "Reload"           f.exec "xrdb -load $XENVIRONMENT &"
   "Restart..."   _R  f.restart
   "Exit..."      _x  f.quit_mwm
 }
@@ -64,26 +64,24 @@ Menu Applications
 { 
   "NEdit"            f.exec "nedit &"
   "Emacs"            f.exec "emacs &"
-  !"XEmacs"           f.exec "xemacs &"
 }
 
 Menu Demos
 { 
-  "Atlantis"         f.exec "~/.config/pirix/demos/atlantis &"
-  "Gears"	     f.exec "~/.config/pirix/demos/gears &"
-  "Ideas in Motion"  f.exec "~/.config/pirix/demos/ideas &"
-  "Mech"             f.exec "~/.config/pirix/demos/glutmech &"
+  "Atlantis"         f.exec "/opt/pirix/demos/atlantis &"
+  "Gears"	     f.exec "/opt/pirix/demos/gears &"
+  "Ideas in Motion"  f.exec "/opt/pirix/demos/ideas &"
+  "Mech"             f.exec "/opt/pirix/demos/glutmech &"
 }
 
 Menu Internet
 { 
   "Firefox"          f.exec "firefox &"
-  !"Netsurf"          f.exec "netsurf &"
 }
 
 Menu Shell
 {
-  "localhost"        f.exec "urxvt &"
+  "localhost"        f.exec "x-terminal-emulator &"
 }
 
 Menu System
