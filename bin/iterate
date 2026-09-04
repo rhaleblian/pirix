@@ -1,0 +1,1 @@
+DISPLAY=:1 . src/xinitrc
