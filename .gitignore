@@ -9,6 +9,6 @@
 /src/filemanager/filemanager
 /src/icons/*.xpm
 *~
+*.code-workspace
 *.o
 *.zip
-
