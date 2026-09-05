@@ -1,12 +1,16 @@
+prefix := /opt/pirix
+
 install: install-rc install-icons
-	install -d $(HOME)/.config/pirix/wallpaper
-	install -m 644 wallpaper/desktop*.jpg $(HOME)/.config/pirix/wallpaper
+	sudo install -d $(prefix)
+	sudo chgrp -R $(USER) $(prefix)
+	sudo install -d $(prefix)/wallpaper
+	sudo install -m 644 wallpaper/desktop*.jpg $(prefix)/wallpaper
 
 install-rc:
-	install -d $(HOME)/.config/pirix
-	install -m 644 Xresources $(HOME)/.config/pirix/Xresources
-	install -m 644 pirixrc $(HOME)/.config/pirix/pirixrc
-	install -m 644 mwmrc $(HOME)/.config/pirix/mwmrc
+	sudo install -d $(prefix)
+	sudo install -m 644 Xresources $(prefix)/Xresources
+	sudo install -m 644 pirixrc $(prefix)/pirixrc
+	sudo install -m 644 mwmrc $(prefix)/mwmrc
 
 install-icons:
 	make -C icons install

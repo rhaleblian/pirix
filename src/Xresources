@@ -9,18 +9,18 @@
 
 ! Clients
 !
-                      Mwm*windowMenu: WindowMenu
+!                      Mwm*windowMenu: WindowMenu
                       Mwm*useIconBox: false
 
    Mwm*client*title*activeBackground: #c5c1aa
-                Mwm*client*iconImage: HOME/.config/pirix/icons/template.xpm
 
-                 Mwm*Emacs*iconImage: HOME/.config/pirix/icons/emacs.xpm
-           Mwm*Firefox-esr*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
-               Mwm*Firefox*iconImage: HOME/.config/pirix/icons/firefox-esr.xpm
-           Mwm*Mathematica*iconImage: HOME/.config/pirix/icons/mathematica.xpm
-                  Mwm*Surf*iconImage: HOME/.config/pirix/icons/surf.xpm
-                 Mwm*URxvt*iconImage: HOME/.config/pirix/icons/winterm.xpm
+                Mwm*client*iconImage: /opt/pirix/icons/template.xpm
+                 Mwm*Emacs*iconImage: /opt/pirix/icons/emacs.xpm
+           Mwm*Firefox-esr*iconImage: /opt/pirix/icons/firefox-esr.xpm
+           Mwm*Mathematica*iconImage: /opt/pirix/icons/mathematica.xpm
+                  Mwm*Surf*iconImage: /opt/pirix/icons/surf.xpm
+!                 Mwm*URxvt*iconImage: /opt/pirix/icons/winterm.xpm
+   Mwm*X-terminal-emulator*iconImage: /opt/pirix/icons/winterm.xpm
 
 
 ! Appearance and Behaviour

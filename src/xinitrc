@@ -1,4 +1,6 @@
-
-    . $HOME/.config/pirix/pirixrc
-    pirix
-
+xrdb -load /opt/pirix/Xresources
+xsetroot -default
+#xclock &
+#xosview &
+#urxvt -geometry 80x40 &
+mwm -xrm "mwm*configFile: /opt/pirix/mwmrc"

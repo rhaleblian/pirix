@@ -24,40 +24,31 @@ As usual, Fedora distributions will use different names for these packages.
 
 Then install:
 
-    make install
+    sudo make install
 
 Put this in your `$HOME/.xsession`
-or `$HOME/.xinitrc` (if you do not use a login greeter):
+or `$HOME/.xinitrc` [1]:
 
-    . $HOME/.config/pirix/pirixrc
-    pirix
+    . /opt/pirix/xinitrc
 
 If you're booting directly to PIXEL Desktop, change your boot setting
 with `raspi-config` to drop into a shell. Then run
 
     startx
 
-We mentioned `.xsession` because some remote desktop mechanisms
-and display managers like `xrdp` will use that file instead.
-Salient if you, say, want piRIX to be available from your login screen.
-
-And if you know what way you want to start up your desktop, then do that.
-
 
 ## What gets installed?
 
 Files will be installed to
 
-    $HOME/.config/pirix
+    /opt/pirix
 
-NOTE!
-Any changes you may have made to files already here
-will be overwritten!
+NOTE!  Reinstallation clobbers files and therefore any changes made here.
 
 
 ## How do I uninstall this?
 
-    rm -r $HOME/.config/pirix
+    sudo rm -r /opt/pirix
 
 and undo anything you did to `$HOME/.xinitrc`.
 
@@ -126,3 +117,9 @@ to Navigator.
 * IRIX - Silicon Graphics Computer Systems
 * Motif - The Open Group
 * GL Demos - opengl.org
+
+---
+
+[1] We mentioned `.xsession` because some remote desktop mechanisms
+and display managers like `xrdp` will use that file instead.
+Salient if you, say, want piRIX to be available from your login screen.
