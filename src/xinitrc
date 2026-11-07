@@ -1,11 +1,9 @@
 PIRIX_CONFIG_DIR="$HOME/.config/pirix"
 export XENVIRONMENT=$PIRIX_CONFIG_DIR/Xresources
-#xsetroot -solid gray30
 
 # VMware Fusion clipboard
 if [ -x vmtoolsd ] && [ -n vmusr ]; then
     vmtoolsd -n vmusr &
 fi
 
-#mwm -xrm "Mwm*configFile: $PIRIX_CONFIG_DIR/mwmrc"
-$HOME/Developer/emwm/src/emwm -xrm "Emwm*configFile: $PIRIX_CONFIG_DIR/emwmrc"
+emwm -xrm "Emwm*configFile: $PIRIX_CONFIG_DIR/emwmrc"

@@ -4,13 +4,15 @@
                            *fontList: -adobe-helvetica-bold-o-normal--14-*
                       *menu*fontList: -adobe-helvetica-bold-o-normal--14-*
                     *menubar*FontSet: -adobe-helvetica-bold-o-normal--14-*
+                        *renderTable: default
+       *renderTable.default.fontType: FONT_IS_FONT
+       *renderTable.default.fontName: -adobe-helvetica-bold-o-normal--14-*
                        Xft.antialias: true
-
 
 ! Clients
 !
    Emwm*client*title*activeBackground: #c5c1aa
-                          *iconImage: /home/ray/.config/pirix/icons/client.xpm
+                           *iconImage: /home/ray/.config/pirix/icons/client.xpm
                 Emwm*client*iconImage: /home/ray/.config/pirix/icons/client.xpm
                  Emwm*Emacs*iconImage: /home/ray/.config/pirix/icons/emacs.xpm
            Emwm*Firefox-esr*iconImage: /home/ray/.config/pirix/icons/firefox-esr.xpm
@@ -59,10 +61,10 @@
 
 ! Strings
 !
-       Emwm*confirmQuit*messageString: Exit piDwm?
+       Emwm*confirmQuit*messageString: Exit 3.14Dwm?
    Emwm*confirmQuit*cancelLabelString: Cancel
        Emwm*confirmQuit*okLabelString: OK
-    Emwm*confirmRestart*messageString: Restart piDwm?
+    Emwm*confirmRestart*messageString: Restart 3.14Dwm?
 Emwm*confirmRestart*cancelLabelString: Cancel
     Emwm*confirmRestart*okLabelString: OK
 !                    Emwm*iconBoxTitle: Windows Overview
