@@ -1,0 +1,13 @@
+#!/bin/bash
+# Start Xephyr in the background and capture its Process ID
+Xephyr :2 -screen 1024x768 -ac &
+XEPHYR_PID=$!
+
+# Wait for the X server to initialize
+sleep 1
+
+# Launch piRIX
+DISPLAY=:2 . $HOME/.config/pirix/xinitrc pirix
+
+# Kill Xephyr when you exit piRIX
+kill $XEPHYR_PID

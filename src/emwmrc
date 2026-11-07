@@ -1,19 +1,17 @@
-! Default menu and keybinding configuration for EMWM.
+! Default menu and keybinding configuration for piRIX/EMWM.
 ! Copy this file to ~/.emwmrc for customization.
 
 ! Root Menu
 Menu DefaultRootMenu
 {
-	"Main Menu"		f.title
-	"New Xterm"		f.exec "xterm &"
+	"Desktop"		f.title
+	"New Window"	f.exec "x-terminal-emulator &"
 	 no-label		f.separator
-	"Shuffle Up"		f.circle_up
-	"Shuffle Down"		f.circle_down
-	"Pack Icons"		f.pack_icons
+	"Shuffle Up"	f.circle_up
+	"Shuffle Down"	f.circle_down
+	"Tidy Icons"	f.pack_icons
 	 no-label		f.separator
-	"Next Workspace" f.next_workspace
-	"Prev. Workspace" f.prev_workspace
-	 no-label		f.separator
+	"Reload"		f.exec "xrdb -load $XENVIRONMENT &"
 	"Restart..."	f.restart
 	"Quit..."       f.quit
 }
@@ -27,11 +25,7 @@ Menu DefaultWindowMenu
 	Minimize	_n	Alt<Key>F9	f.minimize
 	Maximize	_x	Alt<Key>F10	f.maximize
 	Lower		_L	Alt<Key>F3	f.lower
-	no-label				f.separator
-	"Occupy Workspace..."	_O	Alt<Key>F2 f.workspace_presence
-	"Occupy All Workspaces"	_A	f.occupy_all
-	"Unoccupy Workspace"	_U	f.remove
-	no-label				f.separator	
+	no-label					f.separator	
 	Close		_C	Alt<Key>F4	f.kill
 }
 
@@ -39,22 +33,28 @@ Menu DefaultWindowMenu
 ! Key Bindings
 Keys DefaultKeyBindings
 {
-	Shift<Key>Escape window|icon	f.post_wmenu
-	Alt<Key>space window|icon		f.post_wmenu
-	Alt<Key>Tab	root|icon|window	f.next_key
-	Alt Shift<Key>Tab root|icon|window	f.prev_key
-	Alt<Key>Escape root|icon|window	f.circle_down
+	Shift<Key>Escape window|icon			f.post_wmenu
+	Alt<Key>space window|icon				f.post_wmenu
+	Alt<Key>Tab	root|icon|window			f.next_key
+	Alt Shift<Key>Tab root|icon|window		f.prev_key
+	Alt<Key>Escape root|icon|window			f.circle_down
 	Alt Shift<Key>Escape root|icon|window	f.circle_up
-	Alt<Key>F6 window f.next_key transient
-	Alt Shift<Key>F6 window f.prev_key transient
-	Shift<Key>F10 icon f.post_wmenu
-!	Alt Shift<Key>Delete root|icon|window f.restart
+	Alt<Key>F6 window						f.next_key transient
+	Alt Shift<Key>F6 window					f.prev_key transient
+	Shift<Key>F10 icon						f.post_wmenu
+	Alt Shift<Key>Delete root|icon|window	f.restart
+	Shift<Key>Escape root					f.menu DefaultRootMenu
+	Alt<Key>space root						f.menu DefaultRootMenu
 }
 
 ! Mouse Button Bindins
 Buttons DefaultButtonBindings
 {
+	<Btn1Down>  root		f.menu Selected
 	<Btn1Down>	icon|frame	f.raise
+	<Btn1Down>	window		f.raise
+	<Btn1Click> frame		f.raise
+
 	<Btn3Down>	icon|frame	f.post_wmenu
 	<Btn3Down>	root		f.menu	DefaultRootMenu
 }
@@ -74,4 +74,48 @@ Buttons PointerButtonBindings
 	<Btn3Down>	root		f.menu	DefaultRootMenu
 	<Btn1Down>	window		f.raise
 	Alt<Btn1Down>	window|icon	f.lower
+}
+
+! Toolchest Menus
+Menu Applications
+{ 
+	"NEdit"				f.exec "nedit &"
+	"Emacs"				f.exec "emacs &"
+}
+
+Menu Demos
+{ 
+	"Atlantis"			f.exec "/home/ray/.config/pirix/demos/atlantis &"
+	"Gears"				f.exec "/home/ray/.config/pirix/demos/gears &"
+	"Ideas in Motion"	f.exec "/home/ray/.config/pirix/demos/ideas &"
+	"Mech"				f.exec "/home/ray/.config/pirix/demos/glutmech &"
+}
+
+Menu Internet
+{ 
+	"Firefox"			f.exec "firefox &"
+}
+
+Menu Shell
+{
+	"localhost"			f.exec "x-terminal-emulator &"
+}
+
+Menu System
+{
+	"Clock"				f.exec "xclock &"
+	"Console"			f.exec "sudo xconsole &"
+	"Files"				f.exec "pcmanfm &"
+	"Manual"			f.exec "xman &"
+	"Monitor"			f.exec "xosview &"
+}
+
+Menu Selected dynamic
+{
+	"Toolchest"        f.title
+	"Shell"            f.menu Shell
+	"Applications"     f.menu Applications
+	"Demos"            f.menu Demos
+	"Internet"         f.menu Internet
+	"System"           f.menu System
 }

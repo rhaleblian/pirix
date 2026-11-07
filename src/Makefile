@@ -5,7 +5,7 @@ install: install-rc install-icons
 install-rc:
 	install -d $(HOME)/.config/pirix
 	install -m 644 Xresources $(HOME)/.config/pirix/Xresources
-	install -m 644 pirixrc $(HOME)/.config/pirix/pirixrc
+	install -m 644 xinitrc $(HOME)/.config/pirix/xinitrc
 	install -m 644 mwmrc $(HOME)/.config/pirix/mwmrc
 
 install-icons:
@@ -13,20 +13,11 @@ install-icons:
 
 # Desktop configuration
 
-icons:
+icons:s
 	make -C icons
 
-
-# OpenGL Demos
-
-demos: demo/atlantis/atlantis demo/ideas/ideas demo/glutmech/glutmech
-demo/atlantis/atlantis:
-	cd demo/atlantis && make
-demo/ideas/ideas:
-	cd demo/ideas && make
-demo/glutmech/glutmech:
-	cd demo/glutmech && make
-
+test:
+	distrobox enter pirix -- launch-pirix
 
 clean:
 	cd icons && make clean
@@ -34,5 +25,4 @@ clean:
 	cd demo/ideas && make clean
 	cd demo/glutmech && make clean
 
-
-.PHONY: instructions install icons apt-install demos
+.PHONY: instructions install icons apt-install demos test clean

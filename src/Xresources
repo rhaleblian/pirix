@@ -9,63 +9,63 @@
 
 ! Clients
 !
-   Mwm*client*title*activeBackground: #c5c1aa
-                          *iconImage: /opt/pirix/icons/client.xpm
-                Mwm*client*iconImage: /opt/pirix/icons/client.xpm
-                 Mwm*Emacs*iconImage: /opt/pirix/icons/emacs.xpm
-           Mwm*Firefox-esr*iconImage: /opt/pirix/icons/firefox-esr.xpm
-           Mwm*Mathematica*iconImage: /opt/pirix/icons/mathematica.xpm
-                 Mwm*NEdit*iconImage: /opt/pirix/icons/nedit.xpm
-                 Mwm*URxvt*iconImage: /opt/pirix/icons/winterm.xpm
-   Mwm*X-terminal-emulator*iconImage: /opt/pirix/icons/winterm.xpm
-        Mwm*Gnome-terminal*iconImage: /opt/pirix/icons/winterm.xpm
-            Mwm*Lxterminal*iconImage: /opt/pirix/icons/winterm.xpm
+   Emwm*client*title*activeBackground: #c5c1aa
+                          *iconImage: /home/ray/.config/pirix/icons/client.xpm
+                Emwm*client*iconImage: /home/ray/.config/pirix/icons/client.xpm
+                 Emwm*Emacs*iconImage: /home/ray/.config/pirix/icons/emacs.xpm
+           Emwm*Firefox-esr*iconImage: /home/ray/.config/pirix/icons/firefox-esr.xpm
+           Emwm*Mathematica*iconImage: /home/ray/.config/pirix/icons/mathematica.xpm
+                 Emwm*NEdit*iconImage: /home/ray/.config/pirix/icons/nedit.xpm
+                 Emwm*URxvt*iconImage: /home/ray/.config/pirix/icons/winterm.xpm
+   Emwm*X-terminal-emulator*iconImage: /home/ray/.config/pirix/icons/winterm.xpm
+        Emwm*Gnome-terminal*iconImage: /home/ray/.config/pirix/icons/winterm.xpm
+            Emwm*Lxterminal*iconImage: /home/ray/.config/pirix/icons/winterm.xpm
 
 
 ! Appearance and Behaviour
 !
-                      Mwm*background: #aaaaaa
-                      Mwm*foreground: gray10
-                 Mwm*menu*foreground: gray10
-                Mwm*activeBackground: #c5c1aa
+                      Emwm*background: #aaaaaa
+                      Emwm*foreground: gray10
+                 Emwm*menu*foreground: gray10
+                Emwm*activeBackground: #c5c1aa
 
-                       Mwm*iconClick: false
-                  Mwm*iconDecoration: label image
-                Mwm*iconImageMaximum: 85x67
-                   Mwm*iconPlacement: left top tight
-             Mwm*iconPlacementMargin: 10
-                  Mwm*lowerOnIconify: false
-                      Mwm*useIconBox: false
+                       Emwm*iconClick: false
+                  Emwm*iconDecoration: label image
+                Emwm*iconImageMaximum: 85x67
+                   Emwm*iconPlacement: left top tight
+             Emwm*iconPlacementMargin: 10
+                  Emwm*lowerOnIconify: false
+                      Emwm*useIconBox: false
 		      
-                  Mwm*buttonBindings: ButtonBindings
-                  Mwm*freezeOnConfig: false
-                     Mwm*keyBindings: KeyBindings
-             Mwm*keyboardFocusPolicy: explicit
-                     Mwm*passButtons: true
-                    Mwm*showFeedback: behavior restart quit
-              Mwm*transientFunctions: all -minimize -quit
+                  Emwm*buttonBindings: DefaultButtonBindings
+                  Emwm*freezeOnConfig: false
+                     Emwm*keyBindings: DefaultKeyBindings
+             Emwm*keyboardFocusPolicy: explicit
+                     Emwm*passButtons: true
+                    Emwm*showFeedback: behavior restart quit
+              Emwm*transientFunctions: all -minimize -quit
 
-                Mwm*frameBorderWidth: 6
-		     Mwm*limitResize: true
-                      Mwm*moveOpaque: true
-                   Mwm*moveThreshold: 3
-                     Mwm*multiScreen: true
-                 Mwm*positionIsFrame: false
-                Mwm*positionOnScreen: true
-               Mwm*resizeBorderWidth: 6
-                    Mwm*resizeOpaque: true
-!                      Mwm*windowMenu: WindowMenu
+                Emwm*frameBorderWidth: 6
+		     Emwm*limitResize: true
+                      Emwm*moveOpaque: true
+                   Emwm*moveThreshold: 3
+                     Emwm*multiScreen: true
+                 Emwm*positionIsFrame: false
+                Emwm*positionOnScreen: true
+               Emwm*resizeBorderWidth: 6
+                    Emwm*resizeOpaque: true
+                      Emwm*windowMenu: DefaultWindowMenu
 
 
 ! Strings
 !
-       Mwm*confirmQuit*messageString: Exit piDwm?
-   Mwm*confirmQuit*cancelLabelString: Cancel
-       Mwm*confirmQuit*okLabelString: OK
-    Mwm*confirmRestart*messageString: Restart piDwm?
-Mwm*confirmRestart*cancelLabelString: Cancel
-    Mwm*confirmRestart*okLabelString: OK
-!                    Mwm*iconBoxTitle: Windows Overview
+       Emwm*confirmQuit*messageString: Exit piDwm?
+   Emwm*confirmQuit*cancelLabelString: Cancel
+       Emwm*confirmQuit*okLabelString: OK
+    Emwm*confirmRestart*messageString: Restart piDwm?
+Emwm*confirmRestart*cancelLabelString: Cancel
+    Emwm*confirmRestart*okLabelString: OK
+!                    Emwm*iconBoxTitle: Windows Overview
 
 
 ! Emacs
@@ -79,7 +79,7 @@ Mwm*confirmRestart*cancelLabelString: Cancel
            Emacs.pane.menubar.font: -adobe-helvetica-bold-o-normal--14-*
 
 
-! NEdit
+! NEdits
 !
              nedit*text.background: #cc9999
 
