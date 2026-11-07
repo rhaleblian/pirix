@@ -1,4 +1,4 @@
-prefix := /opt/pirix/icons
+prefix := $(HOME)/.config/pirix/icons
 
 TARGETS = \
 $(prefix)/client.xpm \
