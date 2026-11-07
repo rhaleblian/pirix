@@ -6,7 +6,7 @@ install-rc:
 	install -d $(HOME)/.config/pirix
 	install -m 644 Xresources $(HOME)/.config/pirix/Xresources
 	install -m 644 xinitrc $(HOME)/.config/pirix/xinitrc
-	install -m 644 mwmrc $(HOME)/.config/pirix/mwmrc
+	install -m 644 emwmrc $(HOME)/.config/pirix/emwmrc
 
 install-icons:
 	make -C icons install
