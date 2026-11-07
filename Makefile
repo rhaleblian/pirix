@@ -8,8 +8,11 @@ instructions:
 	@echo "If that is non-destructive, run 'make install'."
 	@echo Then see README.md for the remaining steps.
 
-install:
+install: install-icons
 	make -C src install
+
+install-icons:
+	make -C icons install
 
 # Operating system packages.
 

@@ -1,4 +1,11 @@
+*~
+*.code-workspace
+*.o
+*.zip
+#*
 /build
+/icons/*.xpm
+/settings.json
 /src/Xmd/libXmd.so
 /src/demo/atlantis/atlantis
 /src/demo/glutmech/glutmech
@@ -7,10 +14,3 @@
 /src/demo/mui
 /src/demo/texfont
 /src/filemanager/filemanager
-/src/icons/*.xpm
-*~
-*.code-workspace
-*.o
-*.zip
-#*
-

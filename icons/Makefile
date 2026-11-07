@@ -11,43 +11,37 @@ $(prefix)/nedit.xpm \
 $(prefix)/surf.xpm \
 $(prefix)/winterm.xpm
 
-.xpm: .png
-	convert $< $@
-
-all: $(TARGETS)
-
-$(prefix)/client.xpm: client.png
-	convert $< $@
-
-$(prefix)/emacs.xpm: emacs.png
-	convert $< $@
-
-$(prefix)/epiphany-browser.xpm: epiphany-browser.png
-	convert $< -resize 86x86 $@
-
-$(prefix)/firefox-esr.xpm: firefox-esr.png
-	convert $< $@
-
-$(prefix)/gitk.xpm: gitk.png
-	convert $< -resize 86x86 $@
-
-$(prefix)/mathematica.xpm: mathematica.png
-	convert $< $@
-
-$(prefix)/nedit.xpm: nedit.png
-	convert $< $@
-
-$(prefix)/surf.xpm: surf.png
-	convert $< $@
-
-$(prefix)/winterm.xpm: winterm.png
-	convert $< $@
-
 install: $(prefix) $(TARGETS)
 
+$(prefix)/client.xpm: client.png
+	magick convert $< $@
+
+$(prefix)/emacs.xpm: emacs.png
+	magick convert $< $@
+
+$(prefix)/epiphany-browser.xpm: epiphany-browser.png
+	magick convert $< -resize 86x86 $@
+
+$(prefix)/firefox-esr.xpm: firefox-esr.png
+	magick convert $< $@
+
+$(prefix)/gitk.xpm: gitk.png
+	magick convert $< -resize 86x86 $@
+
+$(prefix)/mathematica.xpm: mathematica.png
+	magick convert $< $@
+
+$(prefix)/nedit.xpm: nedit.png
+	magick convert $< $@
+
+$(prefix)/surf.xpm: surf.png
+	magick convert $< $@
+
+$(prefix)/winterm.xpm: winterm.png
+	magick convert $< $@
 
 $(prefix):
 	install -d $(prefix)
 
 clean:
-	- rm *.xpm
+	- rm $(prefix)/*.xpm
