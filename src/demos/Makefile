@@ -1,7 +1,11 @@
 DSTDIR := $(HOME)/.config/pirix/demos
 
 
-install: atlantis/atlantis gears/gears glutmech/glutmech ideas/ideas
+TARGETS=atlantis/atlantis gears/gears glutmech/glutmech ideas/ideas
+
+default: $(TARGETS)
+
+install: $(TARGETS)
 	install -d $(DSTDIR)
 	cp $? $(DSTDIR)
 
@@ -23,3 +27,4 @@ glutmech/glutmech:
 ideas/ideas:
 	make -C ideas
 
+.PHONY: default install

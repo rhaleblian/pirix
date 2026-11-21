@@ -3,9 +3,9 @@
 piRIX is an emulation of SGI's IRIX Interactive Desktop on Raspberry Pi 3/4
 (and some other platforms).
 
-![screenshot](etc/screenshot/screenshot2.png)
-![screenshot](etc/screenshot/screenshot1.png)
-![screenshot](etc/screenshot/screenshot0.png)
+![screenshot](doc/screenshot/screenshot2.png)
+![screenshot](doc/screenshot/screenshot1.png)
+![screenshot](doc/screenshot/screenshot0.png)
 
 Besides being nostalgic, this desktop environment is fast and easy on Pi 
 resources.
@@ -16,10 +16,10 @@ resources.
 On Debian distributions, you'll need a few packages first.
 
 	apt install \
-	emwm motif-clients freeglut3-dev imagemagick \
+	emwm freeglut3-dev imagemagick libxi libxm4 motif-clients \
     xosview xfonts-100dpi xfonts-75dpi x11-apps xloadimage
 
-As usual, Fedora distributions will use different names for these packages.
+As usual, Fedora distributions will use different package names.
 
 We assume you have an X11 terminal emulator installer installed so
 `x-terminal-emulator` resolves to something.

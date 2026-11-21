@@ -1,27 +1,17 @@
 
 instructions:
-	@echo "Examine the 'install' rule in src/Makefile first."
-	@echo
 	@echo Files are installed to '$(HOME)/.config/pirix' .
 	@echo IMPORTANT: installation overwrites any previous edits!
 	@echo
-	@echo "If that is non-destructive, run 'make install'."
-	@echo Then see README.md for the remaining steps.
+	@echo "Run 'make install'."
+	@echo Then see README.md for additional steps.
 
-install: install-icons
-	make -C src install
+install:
+	make -C share install
+	make -C etc install
+
+demos:
+	make -C src/demos
 
 install-demos:
 	make -C src/demos install
-
-install-icons:
-	make -C icons install
-
-# Operating system packages.
-
-install-debian-prerequisites:
-	apt install \
-	mwm libmotif-dev motif-clients \
-	xosview xfonts-100dpi xfonts-75dpi x11-apps \
-	freeglut3-dev rxvt-unicode firefox-esr nedit xloadimage \
-	imagemagick
