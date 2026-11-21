@@ -14,31 +14,31 @@ $(prefix)/winterm.xpm
 install: $(prefix) $(TARGETS)
 
 $(prefix)/client.xpm: client.png
-	magick convert $< $@
+	magick $< $@
 
 $(prefix)/emacs.xpm: emacs.png
-	magick convert $< $@
+	magick $< $@
 
 $(prefix)/epiphany-browser.xpm: epiphany-browser.png
-	magick convert $< -resize 86x86 $@
+	magick $< -resize 86x86 $@
 
 $(prefix)/firefox-esr.xpm: firefox-esr.png
-	magick convert $< $@
+	magick $< $@
 
 $(prefix)/gitk.xpm: gitk.png
-	magick convert $< -resize 86x86 $@
+	magick $< -resize 86x86 $@
 
 $(prefix)/mathematica.xpm: mathematica.png
-	magick convert $< $@
+	magick $< $@
 
 $(prefix)/nedit.xpm: nedit.png
-	magick convert $< $@
+	magick $< $@
 
 $(prefix)/surf.xpm: surf.png
-	magick convert $< $@
+	magick $< $@
 
 $(prefix)/winterm.xpm: winterm.png
-	magick convert $< $@
+	magick $< $@
 
 $(prefix):
 	install -d $(prefix)
