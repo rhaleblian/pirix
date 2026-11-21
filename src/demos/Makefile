@@ -2,7 +2,7 @@ DSTDIR := $(HOME)/.config/pirix/demos
 
 
 install: atlantis/atlantis gears/gears glutmech/glutmech ideas/ideas
-	- mkdir $(DSTDIR)
+	install -d $(DSTDIR)
 	cp $? $(DSTDIR)
 
 prep-debian:
