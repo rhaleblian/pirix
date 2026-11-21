@@ -1,4 +1,5 @@
 /build
+/settings.json
 /src/Xmd/libXmd.so
 /src/demo/atlantis/atlantis
 /src/demo/glutmech/glutmech

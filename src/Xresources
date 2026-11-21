@@ -1,10 +1,31 @@
 
 ! Fonts
 !
-                           *fontList: -adobe-helvetica-bold-o-normal--14-*
-                      *menu*fontList: -adobe-helvetica-bold-o-normal--14-*
-                    *menubar*FontSet: -adobe-helvetica-bold-o-normal--14-*
                        Xft.antialias: true
+
+                        *renderTable: variable
+      *renderTable.variable.fontType: FONT_IS_XFT
+      *renderTable.variable.fontName: Helvetica
+      *renderTable.variable.fontSize: 12
+     *renderTable.variable.fontStyle: Bold Italic
+
+              Emwm*title.renderTable: title
+     Emwm*renderTable.title.fontType: FONT_IS_XFT
+     Emwm*renderTable.title.fontName: Helvetica
+     Emwm*renderTable.title.fontSize: 12
+    Emwm*renderTable.title.fontStyle: Bold Italic
+
+           Emwm*feedback.renderTable: feedback
+  Emwm*renderTable.feedback.fontType: FONT_IS_XFT
+  Emwm*renderTable.feedback.fontName: Helvetica
+  Emwm*renderTable.feedback.fontSize: 12
+ Emwm*renderTable.feedback.fontStyle: Bold
+
+               Emwm*icon.renderTable: icon
+      Emwm*renderTable.icon.fontType: FONT_IS_XFT
+      Emwm*renderTable.icon.fontName: Helvetica
+      Emwm*renderTable.icon.fontSize: 12
+     Emwm*renderTable.icon.fontStyle: Regular
 
 
 ! Clients
