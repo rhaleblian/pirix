@@ -1,0 +1,7 @@
+
+function pirix
+{
+    xrdb -load -DHOME=$HOME $HOME/.config/pirix/Xresources
+    emwm -xrm "Emwm*configFile: $HOME/.config/pirix/emwmrc"
+}
+pirix

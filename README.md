@@ -15,33 +15,29 @@ resources.
 
 On Debian distributions, you'll need a few packages first.
 
-	sudo apt install \
-	mwm libmotif-dev mwm \
-	xosview xfonts-100dpi xfonts-75dpi x11-apps \
-	rxvt-unicode imagemagick
+	apt install \
+	emwm motif-clients freeglut3-dev imagemagick \
+    xosview xfonts-100dpi xfonts-75dpi x11-apps xloadimage
 
 As usual, Fedora distributions will use different names for these packages.
+
+We assume you have an X11 terminal emulator installer installed so
+`x-terminal-emulator` resolves to something.
 
 Then install:
 
     make install
 
-Put this in your `$HOME/.xsession`
-or `$HOME/.xinitrc` (if you do not use a login greeter):
+Put this in your `$HOME/.xsession`, or possibly `$HOME/.xinitrc`:
 
     . $HOME/.config/pirix/pirixrc
-    pirix
 
 If you're booting directly to PIXEL Desktop, change your boot setting
-with `raspi-config` to drop into a shell. Then run
+with `raspi-config` to drop into a shell. Then start your session with
 
     startx
 
-We mentioned `.xsession` because some remote desktop mechanisms
-and display managers like `xrdp` will use that file instead.
-Salient if you, say, want piRIX to be available from your login screen.
-
-And if you know what way you want to start up your desktop, then do that.
+or other method you use to start your desktop.
 
 
 ## What gets installed?
@@ -50,16 +46,14 @@ Files will be installed to
 
     $HOME/.config/pirix
 
-NOTE!
-Any changes you may have made to files already here
-will be overwritten!
+Any changes you may have made to files already there will be overwritten.
 
 
 ## How do I uninstall this?
 
-    rm -r $HOME/.config/pirix
+Undo anything you did to .xsession and .xinitrc, then
 
-and undo anything you did to `$HOME/.xinitrc`.
+    rm -r $HOME/.config/pirix
 
 
 ## Where is the Toolchest?
@@ -73,14 +67,10 @@ over the desktop root window.
 
 If you want the demos,
 
-    cd src/demo
-    make install
+    make install-demos
 
-The executable will in be that directory.
-Follow the same pattern for any of the other demos.
 The Toolchest (well, the thing that must serve for it)
-has menu items to launch them, provided you put the executable
-in your search path.
+has menu items to launch them.
 
 
 ## Does this hackamadoodle only work on the Pi?
@@ -98,9 +88,7 @@ If you get it working in macOS, post about that.
 
 ## Notes
 
-SGI's Indigo Magic Desktop and Interactive Desktop seem to bear similaries
-to CDE and Motif, being a derivation;
-accordingly, this tweak bases itself on `mwm` at el.
+This tweak bases itself on `emwm`, a modernization of Motif Window Manager.
 
 A lot of things aren't here, including
 * styling modifications to Motif (those rounded windows and scrollbars)
@@ -108,9 +96,6 @@ A lot of things aren't here, including
   and no frame)
 * the file manager (remember that they drew scalable vector icons)
 * a contemporary web browser (Netscape Navigator or NCSA Mosaic)
-
-Firefox is the defined browser, in the spirit of being a successor
-to Navigator.
 
 
 ## TODO

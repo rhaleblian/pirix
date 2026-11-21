@@ -11,6 +11,9 @@ instructions:
 install: install-icons
 	make -C src install
 
+install-demos:
+	make -C demos install
+
 install-icons:
 	make -C icons install
 
